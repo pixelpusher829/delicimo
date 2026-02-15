@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
 	return (
 		<div className="relative overflow-hidden bg-[url('../assets/hero.webp')]">
 			<div className="absolute inset-0 z-0 bg-black/5"></div>
-			<div className="relative z-2 flex flex-col items-left align-center justify-center m-auto max-w-360 min-h-110 p-6  pt-20">
+			<div className="relative z-2 flex flex-col items-left align-center justify-center m-auto max-w-360 min-h-100 p-6 mt-20">
 				<div className="flex gap-4 max-w-xl flex-col">
 					<h1 className="text-5xl">
 						Wholesome Recipes For <wbr /> The Whole Family
