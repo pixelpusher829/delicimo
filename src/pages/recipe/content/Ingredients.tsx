@@ -1,88 +1,53 @@
-import { Circle } from "lucide-react";
+import { useState } from "react";
+import { Circle, CheckCircle2 } from "lucide-react";
 
-const Ingredients: React.FC = () => {
+interface IngredientsProps {
+  ingredients: any[];
+}
+
+const Ingredients: React.FC<IngredientsProps> = ({ ingredients }) => {
+  const [checkedIds, setCheckedIds] = useState<Set<number>>(new Set());
+
+  const toggleIngredient = (id: number) => {
+    const newCheckedIds = new Set(checkedIds);
+    if (newCheckedIds.has(id)) {
+      newCheckedIds.delete(id);
+    } else {
+      newCheckedIds.add(id);
+    }
+    setCheckedIds(newCheckedIds);
+  };
+
   return (
     <div className="border-b border-neutral-100 pb-10">
       <h2 className="mb-4 text-3xl">Ingredients</h2>
       <ul className="flex flex-col gap-4">
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">200g</span>&nbsp;rice noodles
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">150g</span>&nbsp;shrimp (peeled)
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">8-10</span>&nbsp;mussels
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">100g</span>&nbsp;squid rings
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">2 cloves</span>&nbsp;garlic (minced)
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">1 tsp</span>&nbsp;ginger (grated)
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">2 tbsp</span>&nbsp;soy sauce
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">1 tbsp</span>&nbsp;fish sauce
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">1 tbsp</span>&nbsp;lime juice
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">1/2 tsp</span>&nbsp;chilli flakes
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">2</span>&nbsp;green onions (sliced)
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">1 tsp</span>&nbsp;sesame oil
-          </span>
-        </li>
-        <li className="flex items-center gap-4 text-xl">
-          <Circle />
-          <span>
-            <span className="font-bold">1 cup</span>&nbsp;vegetable oil
-          </span>
-        </li>
+        {ingredients?.map((ingredient) => {
+          const isChecked = checkedIds.has(ingredient.id);
+          return (
+            <li
+              key={ingredient.id}
+              className="flex cursor-pointer items-center gap-4 text-xl transition-colors hover:text-neutral-600"
+              onClick={() => toggleIngredient(ingredient.id)}
+            >
+              {isChecked ? (
+                <CheckCircle2 className="h-6 w-6 text-green-500" />
+              ) : (
+                <Circle className="h-6 w-6 text-neutral-400" />
+              )}
+              <span
+                className={`transition-all ${
+                  isChecked ? "text-neutral-400 line-through" : ""
+                }`}
+              >
+                <span className="font-bold">
+                  {ingredient.amount} {ingredient.unit}
+                </span>
+                &nbsp;{ingredient.name}
+              </span>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

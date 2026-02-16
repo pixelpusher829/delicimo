@@ -1,11 +1,19 @@
 import { Search } from "lucide-react";
-import { useState } from "react";
-import { useSearchParams } from "react-router";
+import type { useSearchParams } from "react-router";
 
-const Hero: React.FC = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [searchTerm, setSearchTerm] = useState(searchParams.get("q") || "");
+type SetURLSearchParams = ReturnType<typeof useSearchParams>[1];
 
+interface HeroProps {
+  searchTerm: string;
+  setSearchTerm: (term: string) => void;
+  setSearchParams: SetURLSearchParams;
+}
+
+const Hero: React.FC<HeroProps> = ({
+  searchTerm,
+  setSearchTerm,
+  setSearchParams,
+}) => {
   return (
     <div className="relative overflow-hidden bg-[url('../assets/hero.webp')]">
       <div className="absolute inset-0 z-0 bg-black/5"></div>

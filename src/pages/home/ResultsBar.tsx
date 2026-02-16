@@ -7,7 +7,6 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-
 import {
   Select,
   SelectContent,
@@ -16,48 +15,102 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import type { Recipe } from "@/types";
 
-const ResultsBar: React.FC = () => {
+interface ResultsBarProps {
+  recipes: Recipe[];
+  searchTerm: string;
+  currentPage: number;
+  setCurrentPage: (page: number) => void;
+  selectedCuisine: string;
+  setSelectedCuisine: (cuisine: string) => void;
+}
+
+const ITEMS_PER_PAGE = 5;
+
+const ResultsBar: React.FC<ResultsBarProps> = ({
+  recipes,
+  searchTerm,
+  currentPage,
+  setCurrentPage,
+  selectedCuisine,
+  setSelectedCuisine,
+}) => {
+  const totalPages = Math.ceil(recipes.length / ITEMS_PER_PAGE);
+
+  // Get unique cuisines for the filter
+  const cuisines = Array.from(
+    new Set(recipes.flatMap((r) => r.cuisines || []))
+  ).sort();
+
+  const handlePageChange = (page: number) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
+
   return (
-    <div className="grid grid-cols-3">
-      <span className="text-2xl font-semibold"> 69 Recipes for "Pasta"</span>
+    <div className="grid grid-cols-3 items-center">
+      <span className="text-2xl font-semibold">
+        {recipes?.length || 0} Recipes
+        {searchTerm && ` for "${searchTerm}"`}
+      </span>
       <div>
-        <Pagination>
-          <PaginationContent>
-            <PaginationItem>
-              <PaginationPrevious href="#" />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#" isActive>
-                2
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationEllipsis />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationNext href="#" />
-            </PaginationItem>
-          </PaginationContent>
-        </Pagination>
+        {totalPages > 1 && (
+          <Pagination>
+            <PaginationContent>
+              <PaginationItem>
+                <PaginationPrevious
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handlePageChange(currentPage - 1);
+                  }}
+                />
+              </PaginationItem>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                (page) => (
+                  <PaginationItem key={page}>
+                    <PaginationLink
+                      href="#"
+                      isActive={page === currentPage}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handlePageChange(page);
+                      }}
+                    >
+                      {page}
+                    </PaginationLink>
+                  </PaginationItem>
+                )
+              )}
+              <PaginationItem>
+                <PaginationNext
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handlePageChange(currentPage + 1);
+                  }}
+                />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
+        )}
       </div>
       <div className="flex items-center justify-end gap-2">
         <span>Filter Results</span>
-        <Select>
+        <Select value={selectedCuisine} onValueChange={setSelectedCuisine}>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Cuisine" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              <SelectItem value="light">Light</SelectItem>
-              <SelectItem value="dark">Dark</SelectItem>
-              <SelectItem value="system">System</SelectItem>
+              <SelectItem value="all">All Cuisines</SelectItem>
+              {cuisines.map((cuisine) => (
+                <SelectItem key={cuisine} value={cuisine}>
+                  {cuisine}
+                </SelectItem>
+              ))}
             </SelectGroup>
           </SelectContent>
         </Select>

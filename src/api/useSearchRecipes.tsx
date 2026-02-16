@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function useSearchRecipes() {
+export function useSearchRecipes(searchTerm: string) {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
 

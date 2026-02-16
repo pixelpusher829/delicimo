@@ -1,0 +1,764 @@
+{
+  "recipes": [
+    {
+      "id": 1001,
+      "title": "Creamy Garlic Pasta",
+      "image": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 25,
+      "healthScore": 40,
+      "vegan": false,
+      "dairyFree": false,
+      "vegetarian": true,
+      "ketogenic": false,
+      "glutenFree": false,
+      "cuisines": ["Italian"],
+      "extendedIngredients": [
+        { "id": 1, "name": "fettuccine pasta", "amount": 200, "unit": "g" },
+        { "id": 2, "name": "garlic", "amount": 4, "unit": "cloves" },
+        { "id": 3, "name": "heavy cream", "amount": 1, "unit": "cup" },
+        { "id": 4, "name": "parmesan cheese", "amount": 0.5, "unit": "cup" },
+        { "id": 5, "name": "butter", "amount": 2, "unit": "tbsp" },
+        { "id": 6, "name": "fresh parsley", "amount": 1, "unit": "handful" },
+        { "id": 7, "name": "salt and pepper", "amount": 1, "unit": "pinch" }
+      ],
+      "summary": "A rich and comforting pasta dish with garlic and cream.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Fill a large pot with water, add a generous pinch of salt, and bring it to a rolling boil over high heat." },
+            { "number": 2, "step": "Once boiling, add the fettuccine pasta and cook for approximately 8-10 minutes, or until it reaches 'al dente' texture." },
+            { "number": 3, "step": "While the pasta is cooking, place a large skillet over medium heat and melt the butter until it starts to foam slightly." },
+            { "number": 4, "step": "Add the finely minced garlic to the butter and sauté for about 1 minute, stirring constantly to ensure it doesn't burn but becomes fragrant." },
+            { "number": 5, "step": "Gradually pour in the heavy cream and whisk gently. Bring the mixture to a low simmer and let it reduce for 3-5 minutes until it starts to thicken." },
+            { "number": 6, "step": "Lower the heat and stir in the grated parmesan cheese. Continue stirring until the cheese is completely melted and the sauce is smooth and velvety." },
+            { "number": 7, "step": "Drain the pasta, reserving a small splash of the pasta water. Toss the pasta directly into the sauce skillet, adding the reserved water if the sauce is too thick." },
+            { "number": 8, "step": "Season with salt and freshly cracked black pepper. Garnish with chopped fresh parsley and serve immediately while steaming hot." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 550.45, "unit": "kcal", "percentOfDailyNeeds": 27.52 },
+          { "name": "Fat", "amount": 35.12, "unit": "g", "percentOfDailyNeeds": 54.03 },
+          { "name": "Saturated Fat", "amount": 20.45, "unit": "g", "percentOfDailyNeeds": 127.81 },
+          { "name": "Carbohydrates", "amount": 45.67, "unit": "g", "percentOfDailyNeeds": 15.22 },
+          { "name": "Net Carbohydrates", "amount": 42.12, "unit": "g", "percentOfDailyNeeds": 15.32 },
+          { "name": "Sugar", "amount": 4.23, "unit": "g", "percentOfDailyNeeds": 4.7 },
+          { "name": "Cholesterol", "amount": 95.5, "unit": "mg", "percentOfDailyNeeds": 31.83 },
+          { "name": "Sodium", "amount": 480.12, "unit": "mg", "percentOfDailyNeeds": 20.87 },
+          { "name": "Protein", "amount": 14.56, "unit": "g", "percentOfDailyNeeds": 29.12 }
+        ]
+      }
+    },
+    {
+      "id": 1002,
+      "title": "Spicy Chicken Tacos",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=800&auto=format&fit=crop",
+      "servings": 3,
+      "readyInMinutes": 20,
+      "healthScore": 55,
+      "vegan": false,
+      "dairyFree": true,
+      "vegetarian": false,
+      "ketogenic": false,
+      "glutenFree": true,
+      "cuisines": ["Mexican"],
+      "extendedIngredients": [
+        { "id": 10, "name": "chicken breast", "amount": 500, "unit": "g" },
+        { "id": 11, "name": "corn taco shells", "amount": 6, "unit": "" },
+        { "id": 12, "name": "taco seasoning", "amount": 2, "unit": "tbsp" },
+        { "id": 13, "name": "shredded lettuce", "amount": 1, "unit": "cup" },
+        { "id": 14, "name": "diced tomatoes", "amount": 0.5, "unit": "cup" },
+        { "id": 15, "name": "red onion", "amount": 0.25, "unit": "cup" },
+        { "id": 16, "name": "fresh cilantro", "amount": 2, "unit": "tbsp" },
+        { "id": 17, "name": "lime wedges", "amount": 2, "unit": "" }
+      ],
+      "summary": "Quick and flavorful tacos with a spicy kick.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Start by preparing the chicken breast. Trim any excess fat and cut the chicken into uniform, bite-sized cubes for even cooking." },
+            { "number": 2, "step": "In a large mixing bowl, toss the chicken cubes with the taco seasoning until every piece is thoroughly coated." },
+            { "number": 3, "step": "Heat a splash of oil in a large skillet over medium-high heat. Once hot, add the chicken in a single layer." },
+            { "number": 4, "step": "Sear the chicken for 5-7 minutes, stirring occasionally, until it is golden brown on the outside and cooked through to the center." },
+            { "number": 5, "step": "While the chicken cooks, preheat your oven to 350°F (175°C) and place the corn taco shells on a baking sheet for 3-5 minutes to crisp them up." },
+            { "number": 6, "step": "Finely shred the lettuce, dice the tomatoes, and thinly slice the red onion to prepare your fresh toppings." },
+            { "number": 7, "step": "Fill each warmed taco shell with a generous portion of the spicy seared chicken." },
+            { "number": 8, "step": "Top with the lettuce, tomatoes, and onions. Finish with a sprinkle of fresh cilantro and serve with lime wedges for a fresh squeeze of citrus." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 420.12, "unit": "kcal", "percentOfDailyNeeds": 21 },
+          { "name": "Fat", "amount": 18.45, "unit": "g", "percentOfDailyNeeds": 28.38 },
+          { "name": "Saturated Fat", "amount": 4.12, "unit": "g", "percentOfDailyNeeds": 25.75 },
+          { "name": "Carbohydrates", "amount": 35.89, "unit": "g", "percentOfDailyNeeds": 11.96 },
+          { "name": "Net Carbohydrates", "amount": 31.45, "unit": "g", "percentOfDailyNeeds": 11.44 },
+          { "name": "Sugar", "amount": 2.12, "unit": "g", "percentOfDailyNeeds": 2.36 },
+          { "name": "Cholesterol", "amount": 78.45, "unit": "mg", "percentOfDailyNeeds": 26.15 },
+          { "name": "Sodium", "amount": 680.12, "unit": "mg", "percentOfDailyNeeds": 29.57 },
+          { "name": "Protein", "amount": 32.12, "unit": "g", "percentOfDailyNeeds": 64.24 }
+        ]
+      }
+    },
+    {
+      "id": 1003,
+      "title": "Vegetable Stir Fry",
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 15,
+      "healthScore": 85,
+      "vegan": true,
+      "dairyFree": true,
+      "vegetarian": true,
+      "ketogenic": false,
+      "glutenFree": true,
+      "cuisines": ["Chinese"],
+      "extendedIngredients": [
+        { "id": 20, "name": "broccoli florets", "amount": 2, "unit": "cups" },
+        { "id": 21, "name": "bell peppers", "amount": 2, "unit": "" },
+        { "id": 22, "name": "carrots", "amount": 2, "unit": "sliced" },
+        { "id": 23, "name": "snap peas", "amount": 1, "unit": "cup" },
+        { "id": 24, "name": "soy sauce", "amount": 3, "unit": "tbsp" },
+        { "id": 25, "name": "sesame oil", "amount": 1, "unit": "tbsp" },
+        { "id": 26, "name": "ginger", "amount": 1, "unit": "tbsp" },
+        { "id": 27, "name": "garlic cloves", "amount": 2, "unit": "minced" }
+      ],
+      "summary": "A fast and healthy stir fry packed with fresh vegetables.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Thoroughly wash and dry all the vegetables. Chop the broccoli into small florets, slice the peppers into strips, and cut the carrots into thin coins." },
+            { "number": 2, "step": "In a small bowl, whisk together the soy sauce with a teaspoon of honey or brown sugar (optional) to create a simple stir-fry sauce." },
+            { "number": 3, "step": "Place a large wok or a heavy-bottomed skillet over high heat and add the sesame oil. Allow it to heat until it just starts to shimmer." },
+            { "number": 4, "step": "Add the freshly grated ginger and minced garlic to the oil. Stir-fry rapidly for 30 seconds, being careful not to let them brown or burn." },
+            { "number": 5, "step": "Toss in the broccoli and carrots first, as they take the longest to cook. Stir-fry for 2-3 minutes until they start to soften." },
+            { "number": 6, "step": "Add the bell peppers and snap peas to the wok. Continue to stir-fry for another 3-4 minutes until all vegetables are bright and tender-crisp." },
+            { "number": 7, "step": "Pour the soy sauce mixture over the vegetables. Toss everything together continuously for 1 minute to ensure even coating and a glossy finish." },
+            { "number": 8, "step": "Remove from heat immediately. Serve the vibrant vegetables over a bed of steamed jasmine rice or brown rice, and garnish with sesame seeds if desired." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 250.45, "unit": "kcal", "percentOfDailyNeeds": 12.52 },
+          { "name": "Fat", "amount": 8.12, "unit": "g", "percentOfDailyNeeds": 12.49 },
+          { "name": "Saturated Fat", "amount": 1.23, "unit": "g", "percentOfDailyNeeds": 7.69 },
+          { "name": "Carbohydrates", "amount": 35.67, "unit": "g", "percentOfDailyNeeds": 11.89 },
+          { "name": "Net Carbohydrates", "amount": 28.45, "unit": "g", "percentOfDailyNeeds": 10.35 },
+          { "name": "Sugar", "amount": 8.12, "unit": "g", "percentOfDailyNeeds": 9.02 },
+          { "name": "Cholesterol", "amount": 0, "unit": "mg", "percentOfDailyNeeds": 0 },
+          { "name": "Sodium", "amount": 850.45, "unit": "mg", "percentOfDailyNeeds": 36.98 },
+          { "name": "Protein", "amount": 10.12, "unit": "g", "percentOfDailyNeeds": 20.24 }
+        ]
+      }
+    },
+    {
+      "id": 1004,
+      "title": "Mediterranean Quinoa Bowl",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 30,
+      "healthScore": 80,
+      "vegan": true,
+      "dairyFree": true,
+      "vegetarian": true,
+      "ketogenic": false,
+      "glutenFree": true,
+      "cuisines": ["Mediterranean"],
+      "extendedIngredients": [
+        { "id": 30, "name": "quinoa", "amount": 1, "unit": "cup" },
+        { "id": 31, "name": "cucumber", "amount": 1, "unit": "diced" },
+        { "id": 32, "name": "cherry tomatoes", "amount": 1, "unit": "cup" },
+        { "id": 33, "name": "kalamata olives", "amount": 0.25, "unit": "cup" },
+        { "id": 34, "name": "red onion", "amount": 0.25, "unit": "cup" },
+        { "id": 35, "name": "chickpeas", "amount": 1, "unit": "can" },
+        { "id": 36, "name": "lemon juice", "amount": 2, "unit": "tbsp" },
+        { "id": 37, "name": "olive oil", "amount": 3, "unit": "tbsp" }
+      ],
+      "summary": "A refreshing bowl with quinoa, veggies, and herbs.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Rinse the quinoa under cold water in a fine-mesh sieve until the water runs clear to remove any natural bitter coating." },
+            { "number": 2, "step": "Combine the rinsed quinoa with 2 cups of water or vegetable broth in a medium saucepan. Bring to a boil over medium-high heat." },
+            { "number": 3, "step": "Once boiling, reduce the heat to low, cover the pot, and simmer for about 15 minutes until the liquid is fully absorbed and the quinoa is fluffy." },
+            { "number": 4, "step": "Remove the quinoa from heat and let it sit, covered, for 5 minutes. Then, fluff it with a fork and let it cool slightly." },
+            { "number": 5, "step": "While the quinoa cooks, dice the cucumber, halve the cherry tomatoes, and finely slice the red onion. Drain and rinse the canned chickpeas." },
+            { "number": 6, "step": "In a small jar or bowl, whisk together the extra virgin olive oil, fresh lemon juice, salt, pepper, and a pinch of dried oregano." },
+            { "number": 7, "step": "In a large mixing bowl, combine the fluffed quinoa, chopped vegetables, chickpeas, and kalamata olives." },
+            { "number": 8, "step": "Pour the lemon-olive oil dressing over the bowl and toss thoroughly to combine. Serve at room temperature or chill in the fridge for 30 minutes to allow the flavors to meld." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 380.12, "unit": "kcal", "percentOfDailyNeeds": 19.01 },
+          { "name": "Fat", "amount": 15.45, "unit": "g", "percentOfDailyNeeds": 23.77 },
+          { "name": "Saturated Fat", "amount": 2.12, "unit": "g", "percentOfDailyNeeds": 13.25 },
+          { "name": "Carbohydrates", "amount": 50.89, "unit": "g", "percentOfDailyNeeds": 16.96 },
+          { "name": "Net Carbohydrates", "amount": 42.12, "unit": "g", "percentOfDailyNeeds": 15.32 },
+          { "name": "Sugar", "amount": 5.45, "unit": "g", "percentOfDailyNeeds": 6.06 },
+          { "name": "Cholesterol", "amount": 0, "unit": "mg", "percentOfDailyNeeds": 0 },
+          { "name": "Sodium", "amount": 320.12, "unit": "mg", "percentOfDailyNeeds": 13.92 },
+          { "name": "Protein", "amount": 12.45, "unit": "g", "percentOfDailyNeeds": 24.9 }
+        ]
+      }
+    },
+    {
+      "id": 1005,
+      "title": "Lemon Butter Salmon",
+      "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 18,
+      "healthScore": 75,
+      "vegan": false,
+      "dairyFree": false,
+      "vegetarian": false,
+      "ketogenic": true,
+      "glutenFree": true,
+      "cuisines": ["American"],
+      "extendedIngredients": [
+        { "id": 40, "name": "salmon fillets", "amount": 2, "unit": "" },
+        { "id": 41, "name": "butter", "amount": 2, "unit": "tbsp" },
+        { "id": 42, "name": "lemon", "amount": 1, "unit": "sliced" },
+        { "id": 43, "name": "garlic", "amount": 2, "unit": "cloves" },
+        { "id": 44, "name": "fresh dill", "amount": 1, "unit": "tbsp" }
+      ],
+      "summary": "Tender salmon baked with lemon and butter.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Preheat your oven to 400°F (200°C). Line a large rimmed baking sheet with aluminum foil or parchment paper for easy cleanup." },
+            { "number": 2, "step": "Pat the salmon fillets dry with paper towels. This helps the seasoning stick and ensures a better texture after baking." },
+            { "number": 3, "step": "Melt the butter in a small microwave-safe bowl. Stir in the minced garlic and a pinch of salt and pepper." },
+            { "number": 4, "step": "Place the salmon fillets on the prepared baking sheet. Brush the garlic-butter mixture generously over the top and sides of each fillet." },
+            { "number": 5, "step": "Thinly slice the lemon and place 2-3 slices directly on top of each salmon piece. Arrange any remaining lemon slices around them on the tray." },
+            { "number": 6, "step": "Sprinkle the fresh chopped dill over the salmon. The herb will infuse the fish with a fresh aroma as it bakes." },
+            { "number": 7, "step": "Bake in the center of the oven for 12-15 minutes. The exact time will depend on the thickness of your fillets; they are done when the fish flakes easily with a fork." },
+            { "number": 8, "step": "For a slightly crispy top, you can turn on the broiler for the last 1-2 minutes. Serve immediately with your choice of roasted vegetables or a light salad." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 450.89, "unit": "kcal", "percentOfDailyNeeds": 22.54 },
+          { "name": "Fat", "amount": 28.12, "unit": "g", "percentOfDailyNeeds": 43.26 },
+          { "name": "Saturated Fat", "amount": 12.45, "unit": "g", "percentOfDailyNeeds": 77.81 },
+          { "name": "Carbohydrates", "amount": 2.12, "unit": "g", "percentOfDailyNeeds": 0.71 },
+          { "name": "Net Carbohydrates", "amount": 1.89, "unit": "g", "percentOfDailyNeeds": 0.69 },
+          { "name": "Sugar", "amount": 1.12, "unit": "g", "percentOfDailyNeeds": 1.24 },
+          { "name": "Cholesterol", "amount": 115.45, "unit": "mg", "percentOfDailyNeeds": 38.48 },
+          { "name": "Sodium", "amount": 215.12, "unit": "mg", "percentOfDailyNeeds": 9.35 },
+          { "name": "Protein", "amount": 42.89, "unit": "g", "percentOfDailyNeeds": 85.78 }
+        ]
+      }
+    },
+    {
+      "id": 1006,
+      "title": "Thai Green Curry",
+      "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=800&auto=format&fit=crop",
+      "servings": 4,
+      "readyInMinutes": 35,
+      "healthScore": 60,
+      "vegan": false,
+      "dairyFree": true,
+      "vegetarian": false,
+      "ketogenic": false,
+      "glutenFree": true,
+      "cuisines": ["Thai"],
+      "extendedIngredients": [
+        { "id": 50, "name": "green curry paste", "amount": 3, "unit": "tbsp" },
+        { "id": 51, "name": "coconut milk", "amount": 1, "unit": "can" },
+        { "id": 52, "name": "chicken thighs", "amount": 500, "unit": "g" },
+        { "id": 53, "name": "bamboo shoots", "amount": 1, "unit": "cup" },
+        { "id": 54, "name": "thai basil", "amount": 0.5, "unit": "cup" },
+        { "id": 55, "name": "fish sauce", "amount": 1, "unit": "tbsp" },
+        { "id": 56, "name": "brown sugar", "amount": 1, "unit": "tsp" }
+      ],
+      "summary": "A fragrant Thai curry made with coconut milk and fresh herbs.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Open the can of coconut milk and scoop out the thick, solid white cream from the top into a large pot or deep skillet over medium heat." },
+            { "number": 2, "step": "Stir the coconut cream for a couple of minutes until it starts to bubble and release its oil." },
+            { "number": 3, "step": "Add the green curry paste to the pot. Stir-fry the paste in the coconut cream for 2-3 minutes until it becomes intensely fragrant." },
+            { "number": 4, "step": "Add the bite-sized pieces of chicken thighs to the pot. Stir to coat the chicken in the paste and cook until the outside is no longer pink." },
+            { "number": 5, "step": "Pour in the remaining liquid coconut milk from the can. Bring the mixture to a gentle boil, then immediately reduce the heat to a simmer." },
+            { "number": 6, "step": "Stir in the bamboo shoots, fish sauce, and brown sugar. Let the curry simmer uncovered for 15-20 minutes to thicken slightly and cook the chicken through." },
+            { "number": 7, "step": "Taste the sauce and adjust the seasoning—add more fish sauce for saltiness or sugar for sweetness if needed." },
+            { "number": 8, "step": "Turn off the heat and stir in the fresh Thai basil leaves. Serve the aromatic curry in deep bowls alongside steamed jasmine rice." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 480.45, "unit": "kcal", "percentOfDailyNeeds": 24.02 },
+          { "name": "Fat", "amount": 32.12, "unit": "g", "percentOfDailyNeeds": 49.42 },
+          { "name": "Saturated Fat", "amount": 22.45, "unit": "g", "percentOfDailyNeeds": 140.31 },
+          { "name": "Carbohydrates", "amount": 12.89, "unit": "g", "percentOfDailyNeeds": 4.3 },
+          { "name": "Net Carbohydrates", "amount": 10.12, "unit": "g", "percentOfDailyNeeds": 3.68 },
+          { "name": "Sugar", "amount": 5.12, "unit": "g", "percentOfDailyNeeds": 5.69 },
+          { "name": "Cholesterol", "amount": 68.45, "unit": "mg", "percentOfDailyNeeds": 22.82 },
+          { "name": "Sodium", "amount": 920.45, "unit": "mg", "percentOfDailyNeeds": 40.02 },
+          { "name": "Protein", "amount": 28.12, "unit": "g", "percentOfDailyNeeds": 56.24 }
+        ]
+      }
+    },
+    {
+      "id": 1007,
+      "title": "Classic French Onion Soup",
+      "image": "https://images.unsplash.com/photo-1478749485505-2a903a729c63?q=80&w=800&auto=format&fit=crop",
+      "servings": 4,
+      "readyInMinutes": 50,
+      "healthScore": 45,
+      "vegan": false,
+      "dairyFree": false,
+      "vegetarian": true,
+      "ketogenic": false,
+      "glutenFree": false,
+      "cuisines": ["French"],
+      "extendedIngredients": [
+        { "id": 60, "name": "yellow onions", "amount": 5, "unit": "large" },
+        { "id": 61, "name": "beef broth", "amount": 6, "unit": "cups" },
+        { "id": 62, "name": "baguette", "amount": 1, "unit": "loaf" },
+        { "id": 63, "name": "gruyere cheese", "amount": 1.5, "unit": "cups" },
+        { "id": 64, "name": "butter", "amount": 4, "unit": "tbsp" },
+        { "id": 65, "name": "dry thyme", "amount": 1, "unit": "tsp" },
+        { "id": 66, "name": "bay leaf", "amount": 1, "unit": "" }
+      ],
+      "summary": "A deep, savory soup topped with toasted bread and melted cheese.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Peel the onions and slice them into very thin, uniform half-moons. This ensures they cook and caramelize at the same rate." },
+            { "number": 2, "step": "In a heavy-bottomed stockpot or Dutch oven, melt the butter over medium-low heat. Add the onions and toss to coat them in the butter." },
+            { "number": 3, "step": "Cook the onions slowly for 30-45 minutes. Stir every 5 minutes, scraping the bottom of the pot, until the onions are soft and a deep, rich mahogany brown." },
+            { "number": 4, "step": "Pour in the beef broth and add the dried thyme and bay leaf. Bring the soup to a boil, then reduce heat and simmer for 20 minutes to develop the flavor." },
+            { "number": 5, "step": "While the soup simmers, slice the baguette into 1-inch thick rounds. Toast them in the oven or a toaster until they are golden and quite firm." },
+            { "number": 6, "step": "Taste the soup and season with salt and pepper. Remove the bay leaf. Ladle the hot soup into four oven-safe ceramic bowls." },
+            { "number": 7, "step": "Place two slices of toasted bread on top of each bowl, then cover generously with a mound of shredded Gruyere cheese." },
+            { "number": 8, "step": "Place the bowls on a baking sheet and put them under the broiler for 2-4 minutes until the cheese is melted, bubbly, and has brown spots. Serve immediately with care." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 390.45, "unit": "kcal", "percentOfDailyNeeds": 19.52 },
+          { "name": "Fat", "amount": 14.12, "unit": "g", "percentOfDailyNeeds": 21.72 },
+          { "name": "Saturated Fat", "amount": 8.45, "unit": "g", "percentOfDailyNeeds": 52.81 },
+          { "name": "Carbohydrates", "amount": 48.67, "unit": "g", "percentOfDailyNeeds": 16.22 },
+          { "name": "Net Carbohydrates", "amount": 44.12, "unit": "g", "percentOfDailyNeeds": 16.04 },
+          { "name": "Sugar", "amount": 12.45, "unit": "g", "percentOfDailyNeeds": 13.83 },
+          { "name": "Cholesterol", "amount": 42.12, "unit": "mg", "percentOfDailyNeeds": 14.04 },
+          { "name": "Sodium", "amount": 980.45, "unit": "mg", "percentOfDailyNeeds": 42.63 },
+          { "name": "Protein", "amount": 12.12, "unit": "g", "percentOfDailyNeeds": 24.24 }
+        ]
+      }
+    },
+    {
+      "id": 1008,
+      "title": "Korean Beef Bulgogi",
+      "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?q=80&w=800&auto=format&fit=crop",
+      "servings": 3,
+      "readyInMinutes": 25,
+      "healthScore": 52,
+      "vegan": false,
+      "dairyFree": true,
+      "vegetarian": false,
+      "ketogenic": false,
+      "glutenFree": false,
+      "cuisines": ["Korean"],
+      "extendedIngredients": [
+        { "id": 70, "name": "flank steak", "amount": 500, "unit": "g" },
+        { "id": 71, "name": "soy sauce", "amount": 0.25, "unit": "cup" },
+        { "id": 72, "name": "sesame oil", "amount": 2, "unit": "tbsp" },
+        { "id": 73, "name": "brown sugar", "amount": 2, "unit": "tbsp" },
+        { "id": 74, "name": "garlic", "amount": 3, "unit": "cloves" },
+        { "id": 75, "name": "green onions", "amount": 3, "unit": "sliced" },
+        { "id": 76, "name": "toasted sesame seeds", "amount": 1, "unit": "tbsp" }
+      ],
+      "summary": "Sweet and savory marinated beef cooked quickly over high heat.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "For the best texture, place the flank steak in the freezer for about 20 minutes to firm it up before slicing. This makes it much easier to get thin cuts." },
+            { "number": 2, "step": "Slice the steak against the grain into very thin, wide strips. The thinner the slices, the more tender and flavorful the final dish will be." },
+            { "number": 3, "step": "In a medium bowl, whisk together the soy sauce, brown sugar, sesame oil, and minced garlic until the sugar has mostly dissolved." },
+            { "number": 4, "step": "Place the sliced beef into a large resealable bag or bowl and pour the marinade over it. Massage the meat to ensure it's well-coated and marinate for at least 30 minutes." },
+            { "number": 5, "step": "Heat a large cast-iron skillet or wok over high heat until it is smoking slightly. Add a tablespoon of oil and swirl to coat." },
+            { "number": 6, "step": "Add the beef in a single layer, cooking in batches if necessary to avoid overcrowding the pan. Sear for 1-2 minutes per side until charred and caramelized." },
+            { "number": 7, "step": "Once all the beef is cooked, return it all to the pan for a final 30-second toss to heat through." },
+            { "number": 8, "step": "Transfer to a serving plate and garnish heavily with sliced green onions and toasted sesame seeds. Serve with steamed rice and lettuce leaves for wrapping." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 510.45, "unit": "kcal", "percentOfDailyNeeds": 25.52 },
+          { "name": "Fat", "amount": 22.12, "unit": "g", "percentOfDailyNeeds": 34.03 },
+          { "name": "Saturated Fat", "amount": 6.45, "unit": "g", "percentOfDailyNeeds": 40.31 },
+          { "name": "Carbohydrates", "amount": 30.89, "unit": "g", "percentOfDailyNeeds": 10.3 },
+          { "name": "Net Carbohydrates", "amount": 28.12, "unit": "g", "percentOfDailyNeeds": 10.23 },
+          { "name": "Sugar", "amount": 15.45, "unit": "g", "percentOfDailyNeeds": 17.17 },
+          { "name": "Cholesterol", "amount": 88.45, "unit": "mg", "percentOfDailyNeeds": 29.48 },
+          { "name": "Sodium", "amount": 1100.45, "unit": "mg", "percentOfDailyNeeds": 47.85 },
+          { "name": "Protein", "amount": 40.12, "unit": "g", "percentOfDailyNeeds": 80.24 }
+        ]
+      }
+    },
+    {
+      "id": 1009,
+      "title": "Greek Chicken Gyros",
+      "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 30,
+      "healthScore": 68,
+      "vegan": false,
+      "dairyFree": false,
+      "vegetarian": false,
+      "ketogenic": false,
+      "glutenFree": false,
+      "cuisines": ["Greek"],
+      "extendedIngredients": [
+        { "id": 80, "name": "chicken breast", "amount": 400, "unit": "g" },
+        { "id": 81, "name": "pita bread", "amount": 2, "unit": "rounds" },
+        { "id": 82, "name": "greek yogurt", "amount": 1, "unit": "cup" },
+        { "id": 83, "name": "cucumber", "amount": 0.5, "unit": "grated" },
+        { "id": 84, "name": "lemon", "amount": 1, "unit": "" },
+        { "id": 85, "name": "dried oregano", "amount": 1, "unit": "tsp" },
+        { "id": 86, "name": "red onion", "amount": 0.25, "unit": "sliced" }
+      ],
+      "summary": "Juicy marinated chicken wrapped in warm pita with homemade tzatziki.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Cut the chicken breast into long, thin strips. Place them in a bowl and mix with 2 tablespoons of olive oil, the juice of half a lemon, dried oregano, salt, and pepper." },
+            { "number": 2, "step": "Let the chicken marinate at room temperature for 15-20 minutes while you prepare the sauce." },
+            { "number": 3, "step": "To make the tzatziki, grate the cucumber and use a clean kitchen towel to squeeze out as much moisture as possible. This is key to a thick sauce." },
+            { "number": 4, "step": "Mix the squeezed cucumber with Greek yogurt, minced garlic, a splash of olive oil, and the remaining lemon juice." },
+            { "number": 5, "step": "Heat a large skillet over medium-high heat. Add the chicken strips and cook for 6-8 minutes, turning occasionally, until they are golden and fully cooked." },
+            { "number": 6, "step": "While the chicken is cooking, lightly toast the pita bread rounds in a dry pan or directly over a low flame until soft and pliable." },
+            { "number": 7, "step": "Spread a generous dollop of tzatziki down the center of each warm pita. Add the cooked chicken strips." },
+            { "number": 8, "step": "Top with thinly sliced red onions, fresh tomatoes, and maybe a few fries if you want it traditional. Roll the pita tightly and serve immediately." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 420.45, "unit": "kcal", "percentOfDailyNeeds": 21.02 },
+          { "name": "Fat", "amount": 14.12, "unit": "g", "percentOfDailyNeeds": 21.72 },
+          { "name": "Saturated Fat", "amount": 3.45, "unit": "g", "percentOfDailyNeeds": 21.56 },
+          { "name": "Carbohydrates", "amount": 38.67, "unit": "g", "percentOfDailyNeeds": 12.89 },
+          { "name": "Net Carbohydrates", "amount": 34.12, "unit": "g", "percentOfDailyNeeds": 12.41 },
+          { "name": "Sugar", "amount": 6.45, "unit": "g", "percentOfDailyNeeds": 7.17 },
+          { "name": "Cholesterol", "amount": 72.12, "unit": "mg", "percentOfDailyNeeds": 24.04 },
+          { "name": "Sodium", "amount": 580.45, "unit": "mg", "percentOfDailyNeeds": 25.24 },
+          { "name": "Protein", "amount": 32.12, "unit": "g", "percentOfDailyNeeds": 64.24 }
+        ]
+      }
+    },
+    {
+      "id": 1010,
+      "title": "Spanish Paella",
+      "image": "https://images.unsplash.com/photo-1709731104921-74ed63f7c4ef?q=80&w=800&auto=format&fit=crop",
+      "servings": 4,
+      "readyInMinutes": 45,
+      "healthScore": 58,
+      "vegan": false,
+      "dairyFree": true,
+      "vegetarian": false,
+      "ketogenic": false,
+      "glutenFree": true,
+      "cuisines": ["Spanish"],
+      "extendedIngredients": [
+        { "id": 90, "name": "arborio rice", "amount": 2, "unit": "cups" },
+        { "id": 91, "name": "chicken broth", "amount": 4, "unit": "cups" },
+        { "id": 92, "name": "shrimp", "amount": 300, "unit": "g" },
+        { "id": 93, "name": "mussels", "amount": 200, "unit": "g" },
+        { "id": 94, "name": "chorizo", "amount": 100, "unit": "g" },
+        { "id": 95, "name": "saffron threads", "amount": 1, "unit": "pinch" },
+        { "id": 96, "name": "frozen peas", "amount": 0.5, "unit": "cup" }
+      ],
+      "summary": "A vibrant Spanish rice dish with saffron, seafood, and chorizo.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "In a medium pot, bring the chicken broth to a simmer. Add the saffron threads and keep the broth warm on the lowest heat setting." },
+            { "number": 2, "step": "Place a wide, shallow paella pan or a large skillet over medium heat. Add a little olive oil and sauté the sliced chorizo until the fat renders and it's slightly crisp." },
+            { "number": 3, "step": "Add the arborio rice to the pan with the chorizo. Stir for 1-2 minutes until the rice is translucent around the edges and well-coated in the flavorful oil." },
+            { "number": 4, "step": "Carefully pour the warm saffron-infused broth over the rice. Shake the pan to distribute the rice evenly, then bring to a gentle boil." },
+            { "number": 5, "step": "Reduce the heat to medium-low. Important: From this point on, do not stir the rice! Stirring will make it creamy like risotto, but paella should be dry and distinct." },
+            { "number": 6, "step": "After about 15 minutes of simmering, once the rice has absorbed most of the liquid, arrange the shrimp and cleaned mussels on top of the rice." },
+            { "number": 7, "step": "Sprinkle the peas over the top and continue cooking for 10 more minutes until the seafood is cooked and the mussels have opened. (Discard any that stay closed)." },
+            { "number": 8, "step": "In the final minutes, you might hear a slight crackling sound—this is the 'socarrat' (the delicious toasted rice crust) forming on the bottom. Remove from heat, cover with a towel for 5 minutes, and serve with lemon." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 520.45, "unit": "kcal", "percentOfDailyNeeds": 26.02 },
+          { "name": "Fat", "amount": 10.12, "unit": "g", "percentOfDailyNeeds": 15.57 },
+          { "name": "Saturated Fat", "amount": 3.45, "unit": "g", "percentOfDailyNeeds": 21.56 },
+          { "name": "Carbohydrates", "amount": 78.67, "unit": "g", "percentOfDailyNeeds": 26.22 },
+          { "name": "Net Carbohydrates", "amount": 74.12, "unit": "g", "percentOfDailyNeeds": 26.95 },
+          { "name": "Sugar", "amount": 4.12, "unit": "g", "percentOfDailyNeeds": 4.58 },
+          { "name": "Cholesterol", "amount": 155.45, "unit": "mg", "percentOfDailyNeeds": 51.82 },
+          { "name": "Sodium", "amount": 850.45, "unit": "mg", "percentOfDailyNeeds": 36.98 },
+          { "name": "Protein", "amount": 22.12, "unit": "g", "percentOfDailyNeeds": 44.24 }
+        ]
+      }
+    },
+    {
+      "id": 1011,
+      "title": "Margherita Pizza",
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 22,
+      "healthScore": 48,
+      "vegan": false,
+      "dairyFree": false,
+      "vegetarian": true,
+      "ketogenic": false,
+      "glutenFree": false,
+      "cuisines": ["Italian"],
+      "extendedIngredients": [
+        { "id": 100, "name": "pizza dough", "amount": 1, "unit": "ball" },
+        { "id": 101, "name": "san marzano tomatoes", "amount": 1, "unit": "can" },
+        { "id": 102, "name": "fresh mozzarella", "amount": 200, "unit": "g" },
+        { "id": 103, "name": "fresh basil", "amount": 1, "unit": "handful" },
+        { "id": 104, "name": "extra virgin olive oil", "amount": 2, "unit": "tbsp" }
+      ],
+      "summary": "A classic Italian pizza with simple, high-quality ingredients.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Place a pizza stone or a large inverted baking sheet in your oven and preheat it to its maximum temperature (usually 500°F/260°C) for at least 30 minutes." },
+            { "number": 2, "step": "Prepare the sauce by simply crushing the San Marzano tomatoes by hand or with a fork in a bowl. Add a pinch of salt—true Margherita sauce is very simple." },
+            { "number": 3, "step": "On a lightly floured surface, gently stretch the pizza dough into a 12-inch circle. Try to keep the edges slightly thicker to form a nice crust." },
+            { "number": 4, "step": "Transfer the dough to a piece of parchment paper or a pizza peel dusted with cornmeal." },
+            { "number": 5, "step": "Spread a thin layer of the tomato sauce over the dough, leaving a 1-inch border for the crust. Tear the fresh mozzarella into small chunks and distribute them evenly." },
+            { "number": 6, "step": "Slide the pizza onto the hot stone or baking sheet. Bake for 8-10 minutes until the crust is puffed and charred in spots, and the cheese is bubbling." },
+            { "number": 7, "step": "Remove the pizza from the oven. Immediately scatter fresh whole basil leaves over the top—the residual heat will release their aroma without wilting them too much." },
+            { "number": 8, "step": "Finish with a generous drizzle of high-quality extra virgin olive oil. Slice and serve immediately while the crust is at its crispest." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 610.45, "unit": "kcal", "percentOfDailyNeeds": 30.52 },
+          { "name": "Fat", "amount": 20.12, "unit": "g", "percentOfDailyNeeds": 30.95 },
+          { "name": "Saturated Fat", "amount": 10.45, "unit": "g", "percentOfDailyNeeds": 65.31 },
+          { "name": "Carbohydrates", "amount": 78.67, "unit": "g", "percentOfDailyNeeds": 26.22 },
+          { "name": "Net Carbohydrates", "amount": 74.12, "unit": "g", "percentOfDailyNeeds": 26.95 },
+          { "name": "Sugar", "amount": 6.12, "unit": "g", "percentOfDailyNeeds": 6.8 },
+          { "name": "Cholesterol", "amount": 52.45, "unit": "mg", "percentOfDailyNeeds": 17.48 },
+          { "name": "Sodium", "amount": 1200.45, "unit": "mg", "percentOfDailyNeeds": 52.19 },
+          { "name": "Protein", "amount": 22.12, "unit": "g", "percentOfDailyNeeds": 44.24 }
+        ]
+      }
+    },
+    {
+      "id": 1012,
+      "title": "Tomato Basil Penne",
+      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 20,
+      "healthScore": 65,
+      "vegan": true,
+      "dairyFree": true,
+      "vegetarian": true,
+      "ketogenic": false,
+      "glutenFree": false,
+      "cuisines": ["Italian"],
+      "extendedIngredients": [
+        { "id": 110, "name": "penne pasta", "amount": 200, "unit": "g" },
+        { "id": 111, "name": "cherry tomatoes", "amount": 2, "unit": "cups" },
+        { "id": 112, "name": "fresh basil", "amount": 0.5, "unit": "cup" },
+        { "id": 113, "name": "garlic", "amount": 2, "unit": "cloves" },
+        { "id": 114, "name": "olive oil", "amount": 0.25, "unit": "cup" }
+      ],
+      "summary": "A simple and fresh pasta dish perfect for a quick weekday meal.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Bring a large pot of water to a rolling boil and add a healthy amount of salt." },
+            { "number": 2, "step": "Add the penne pasta and cook for 10-12 minutes, or until just tender. Reserving half a cup of pasta water before draining." },
+            { "number": 3, "step": "While the pasta is boiling, wash and halve the cherry tomatoes. Finely mince the garlic cloves." },
+            { "number": 4, "step": "In a large skillet, heat the olive oil over medium heat. Add the garlic and cook for about 1 minute until it becomes aromatic but not browned." },
+            { "number": 5, "step": "Add the cherry tomatoes to the skillet with a pinch of salt. Sauté for 5-7 minutes, stirring occasionally, until the tomatoes soften and start to burst." },
+            { "number": 6, "step": "Once the tomatoes have released their juices to form a light sauce, toss in the drained penne pasta." },
+            { "number": 7, "step": "Add the reserved pasta water if needed to loosen the sauce. Stir everything together over the heat for 1 minute to marry the flavors." },
+            { "number": 8, "step": "Remove from heat and stir in a generous amount of freshly torn basil leaves. Serve with an extra drizzle of olive oil on top." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 480.45, "unit": "kcal", "percentOfDailyNeeds": 24.02 },
+          { "name": "Fat", "amount": 8.12, "unit": "g", "percentOfDailyNeeds": 12.49 },
+          { "name": "Saturated Fat", "amount": 1.45, "unit": "g", "percentOfDailyNeeds": 9.06 },
+          { "name": "Carbohydrates", "amount": 82.67, "unit": "g", "percentOfDailyNeeds": 27.56 },
+          { "name": "Net Carbohydrates", "amount": 78.12, "unit": "g", "percentOfDailyNeeds": 28.41 },
+          { "name": "Sugar", "amount": 5.45, "unit": "g", "percentOfDailyNeeds": 6.06 },
+          { "name": "Cholesterol", "amount": 0, "unit": "mg", "percentOfDailyNeeds": 0 },
+          { "name": "Sodium", "amount": 420.45, "unit": "mg", "percentOfDailyNeeds": 18.28 },
+          { "name": "Protein", "amount": 14.12, "unit": "g", "percentOfDailyNeeds": 28.24 }
+        ]
+      }
+    },
+    {
+      "id": 1013,
+      "title": "Butter Chicken",
+      "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=800&auto=format&fit=crop",
+      "servings": 4,
+      "readyInMinutes": 40,
+      "healthScore": 50,
+      "vegan": false,
+      "dairyFree": false,
+      "vegetarian": false,
+      "ketogenic": false,
+      "glutenFree": true,
+      "cuisines": ["Indian"],
+      "extendedIngredients": [
+        { "id": 120, "name": "chicken breast", "amount": 600, "unit": "g" },
+        { "id": 121, "name": "tomato puree", "amount": 1, "unit": "cup" },
+        { "id": 122, "name": "heavy cream", "amount": 0.5, "unit": "cup" },
+        { "id": 123, "name": "butter", "amount": 3, "unit": "tbsp" },
+        { "id": 124, "name": "garam masala", "amount": 1, "unit": "tbsp" },
+        { "id": 125, "name": "turmeric", "amount": 1, "unit": "tsp" },
+        { "id": 126, "name": "ginger garlic paste", "amount": 2, "unit": "tbsp" }
+      ],
+      "summary": "Creamy and rich Indian chicken curry in a spiced tomato sauce.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Cut the chicken into uniform 1-inch cubes. In a bowl, toss the chicken with the ginger-garlic paste, turmeric, and a pinch of salt. Let it marinate for 20 minutes." },
+            { "number": 2, "step": "Heat a large heavy-bottomed pot over medium-high heat and melt 1 tablespoon of butter. Add the chicken in batches and brown them on all sides." },
+            { "number": 3, "step": "Once the chicken is browned, remove it from the pot and set it aside. Add the remaining butter to the same pot." },
+            { "number": 4, "step": "Stir in the tomato puree and garam masala. Cook the sauce for 5-8 minutes, stirring frequently, until it starts to darken and thicken." },
+            { "number": 5, "step": "Return the chicken and any accumulated juices to the pot. Reduce the heat to low, cover, and simmer for 10-12 minutes until the chicken is tender." },
+            { "number": 6, "step": "Pour in the heavy cream and stir gently until the sauce turns into a beautiful vibrant orange color and is velvety smooth." },
+            { "number": 7, "step": "Let it simmer for another 2 minutes, being careful not to let it boil vigorously once the cream is added." },
+            { "number": 8, "step": "Garnish with a little extra cream or fresh cilantro. Serve hot with buttery naan bread or fragrant basmati rice." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 540.45, "unit": "kcal", "percentOfDailyNeeds": 27.02 },
+          { "name": "Fat", "amount": 28.12, "unit": "g", "percentOfDailyNeeds": 43.26 },
+          { "name": "Saturated Fat", "amount": 15.45, "unit": "g", "percentOfDailyNeeds": 96.56 },
+          { "name": "Carbohydrates", "amount": 18.67, "unit": "g", "percentOfDailyNeeds": 6.22 },
+          { "name": "Net Carbohydrates", "amount": 16.12, "unit": "g", "percentOfDailyNeeds": 5.86 },
+          { "name": "Sugar", "amount": 8.45, "unit": "g", "percentOfDailyNeeds": 9.39 },
+          { "name": "Cholesterol", "amount": 125.45, "unit": "mg", "percentOfDailyNeeds": 41.82 },
+          { "name": "Sodium", "amount": 750.45, "unit": "mg", "percentOfDailyNeeds": 32.63 },
+          { "name": "Protein", "amount": 48.12, "unit": "g", "percentOfDailyNeeds": 96.24 }
+        ]
+      }
+    },
+    {
+      "id": 1014,
+      "title": "Sushi Bowl",
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 25,
+      "healthScore": 72,
+      "vegan": false,
+      "dairyFree": true,
+      "vegetarian": false,
+      "ketogenic": false,
+      "glutenFree": true,
+      "cuisines": ["Japanese"],
+      "extendedIngredients": [
+        { "id": 130, "name": "sushi rice", "amount": 1.5, "unit": "cups" },
+        { "id": 131, "name": "fresh salmon", "amount": 200, "unit": "g" },
+        { "id": 132, "name": "avocado", "amount": 1, "unit": "sliced" },
+        { "id": 133, "name": "cucumber", "amount": 0.5, "unit": "sliced" },
+        { "id": 134, "name": "soy sauce", "amount": 2, "unit": "tbsp" },
+        { "id": 135, "name": "pickled ginger", "amount": 1, "unit": "tbsp" }
+      ],
+      "summary": "A deconstructed sushi experience with fresh fish, rice, and vegetables.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Rinse the sushi rice under cold water several times until the water is clear. Cook the rice in a rice cooker or on the stovetop according to package directions." },
+            { "number": 2, "step": "While the rice is still hot, gently fold in a mixture of rice vinegar, a teaspoon of sugar, and a pinch of salt. Let it cool to room temperature." },
+            { "number": 3, "step": "Ensure your salmon is sushi-grade. Use a sharp knife to cut it into small, clean half-inch cubes." },
+            { "number": 4, "step": "Prepare the vegetables: thinly slice the cucumber into rounds, and cut the avocado into long, thin slices." },
+            { "number": 5, "step": "Divide the seasoned sushi rice into two large serving bowls, smoothing the surface slightly." },
+            { "number": 6, "step": "Arrange the salmon cubes, cucumber rounds, and avocado slices in separate sections on top of the rice for a beautiful presentation." },
+            { "number": 7, "step": "Add a small mound of pickled ginger and a dollop of wasabi (optional) to the side of each bowl." },
+            { "number": 8, "step": "Drizzle with soy sauce and sprinkle with sesame seeds or shredded nori before serving." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 390.45, "unit": "kcal", "percentOfDailyNeeds": 19.52 },
+          { "name": "Fat", "amount": 12.12, "unit": "g", "percentOfDailyNeeds": 18.65 },
+          { "name": "Saturated Fat", "amount": 2.45, "unit": "g", "percentOfDailyNeeds": 15.31 },
+          { "name": "Carbohydrates", "amount": 60.67, "unit": "g", "percentOfDailyNeeds": 20.22 },
+          { "name": "Net Carbohydrates", "amount": 56.12, "unit": "g", "percentOfDailyNeeds": 20.41 },
+          { "name": "Sugar", "amount": 5.45, "unit": "g", "percentOfDailyNeeds": 6.06 },
+          { "name": "Cholesterol", "amount": 48.12, "unit": "mg", "percentOfDailyNeeds": 16.04 },
+          { "name": "Sodium", "amount": 620.45, "unit": "mg", "percentOfDailyNeeds": 26.98 },
+          { "name": "Protein", "amount": 8.12, "unit": "g", "percentOfDailyNeeds": 16.24 }
+        ]
+      }
+    },
+    {
+      "id": 1015,
+      "title": "Beef Ramen",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop",
+      "servings": 2,
+      "readyInMinutes": 35,
+      "healthScore": 55,
+      "vegan": false,
+      "dairyFree": true,
+      "vegetarian": false,
+      "ketogenic": false,
+      "glutenFree": false,
+      "cuisines": ["Japanese"],
+      "extendedIngredients": [
+        { "id": 140, "name": "ramen noodles", "amount": 2, "unit": "packs" },
+        { "id": 141, "name": "beef broth", "amount": 4, "unit": "cups" },
+        { "id": 142, "name": "thinly sliced beef", "amount": 200, "unit": "g" },
+        { "id": 143, "name": "soft boiled egg", "amount": 2, "unit": "" },
+        { "id": 144, "name": "bok choy", "amount": 1, "unit": "bunch" },
+        { "id": 145, "name": "soy sauce", "amount": 2, "unit": "tbsp" }
+      ],
+      "summary": "Savory beef broth with noodles, tender beef, and a soft-boiled egg.",
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "In a large pot, combine the beef broth, soy sauce, a slice of ginger, and a clove of smashed garlic. Bring to a boil, then simmer for 10 minutes." },
+            { "number": 2, "step": "While the broth simmers, bring a small separate pot of water to a boil. Carefully lower in two eggs and boil for exactly 6 minutes and 30 seconds for a perfect jammy yolk." },
+            { "number": 3, "step": "Immediately transfer the eggs to an ice bath to stop the cooking. Once cool, peel them carefully and set aside." },
+            { "number": 4, "step": "Add the ramen noodles to the simmering broth pot and cook for 2-3 minutes until they are just tender." },
+            { "number": 5, "step": "In the last minute of noodle cooking, add the halved bok choy to the broth to blanch it until it's bright green and slightly softened." },
+            { "number": 6, "step": "Heat a small skillet over high heat with a drop of oil. Sear the thinly sliced beef for just 30 seconds per side until browned but still tender." },
+            { "number": 7, "step": "Ladle the noodles and a generous amount of broth into two deep bowls. Arrange the bok choy and seared beef on top." },
+            { "number": 8, "step": "Slice the soft-boiled eggs in half and place one in each bowl. Garnish with sliced green onions and a drizzle of chili oil if you like it spicy." }
+          ]
+        }
+      ],
+      "nutrition": {
+        "nutrients": [
+          { "name": "Calories", "amount": 520.45, "unit": "kcal", "percentOfDailyNeeds": 26.02 },
+          { "name": "Fat", "amount": 18.12, "unit": "g", "percentOfDailyNeeds": 27.88 },
+          { "name": "Saturated Fat", "amount": 6.45, "unit": "g", "percentOfDailyNeeds": 40.31 },
+          { "name": "Carbohydrates", "amount": 65.67, "unit": "g", "percentOfDailyNeeds": 21.89 },
+          { "name": "Net Carbohydrates", "amount": 61.12, "unit": "g", "percentOfDailyNeeds": 22.23 },
+          { "name": "Sugar", "amount": 4.45, "unit": "g", "percentOfDailyNeeds": 4.94 },
+          { "name": "Cholesterol", "amount": 185.45, "unit": "mg", "percentOfDailyNeeds": 61.82 },
+          { "name": "Sodium", "amount": 1400.45, "unit": "mg", "percentOfDailyNeeds": 60.89 },
+          { "name": "Protein", "amount": 35.12, "unit": "g", "percentOfDailyNeeds": 70.24 }
+        ]
+      }
+    }
+  ]
+}
