@@ -22,6 +22,7 @@ const SimilarRecipes: React.FC<SimilarRecipesProps> = ({ recipes }) => {
               src={recipe.image}
               alt={recipe.title}
             />
+            {/* The star rating is purely for aesthetics, in a live app this would be dynamic based on user ratings */}
             <div className="flex flex-col justify-center">
               <div className="flex pb-1">
                 <StarIcon className="h-5 w-5 fill-current text-yellow-500" />

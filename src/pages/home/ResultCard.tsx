@@ -17,6 +17,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ recipe }) => {
           alt=""
         />
         <div className="bg-white p-4">
+          {/* The star rating is purely for aesthetics, in a live app this would be dynamic based on user ratings */}
           <div className="flex pb-1">
             <StarIcon className="h-5 w-5 fill-current text-yellow-500" />
             <StarIcon className="h-5 w-5 fill-current text-yellow-500" />
