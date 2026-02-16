@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
+import { useSearchRecipes } from "@/api/useSearchRecipes";
 import Root from "@/layout/Root";
 import { Home, Recipe } from "@/pages";
-import { useSearchRecipes } from "@/api/useSearchRecipes";
 
 function App() {
   const { recipes, loading } = useSearchRecipes("");

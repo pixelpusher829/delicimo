@@ -18,11 +18,11 @@ const Hero: React.FC<HeroProps> = ({
     <div className="relative overflow-hidden bg-[url('../assets/hero.webp')]">
       <div className="absolute inset-0 z-0 bg-black/5"></div>
       <div className="items-left align-center relative z-2 m-auto mt-20 flex min-h-100 max-w-360 flex-col justify-center p-6">
-        <div className="flex max-w-xl flex-col gap-4">
-          <h1 className="text-5xl">
+        <div className="flex max-w-sm md:max-w-lg flex-col gap-4">
+          <h1 className="text-4xl md:text-5xl leading-tight">
             Wholesome Recipes For <wbr /> The Whole Family
           </h1>
-          <span className="text-2xl">Smarter search for everyday cooking.</span>
+          <span className=" text-lg md:text-2xl">Smarter search for everyday cooking.</span>
           <form
             className="mt-4 flex w-fit rounded-full bg-white p-1"
             onSubmit={(e) => {

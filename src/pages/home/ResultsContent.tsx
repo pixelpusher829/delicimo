@@ -7,8 +7,6 @@ interface ResultsContentProps {
   currentPage: number;
 }
 
-const ITEMS_PER_PAGE = 5;
-
 const ResultsContent: React.FC<ResultsContentProps> = ({
   recipes,
   loading,
@@ -18,19 +16,16 @@ const ResultsContent: React.FC<ResultsContentProps> = ({
     return <div className="mt-6 text-center">Loading...</div>;
   }
 
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const paginatedRecipes = recipes.slice(
-    startIndex,
-    startIndex + ITEMS_PER_PAGE
-  );
+  const startIndex = (currentPage - 1) * 5;
+  const paginatedRecipes = recipes.slice(startIndex, startIndex + 5);
 
   return (
-    <div className="mt-6 grid grid-cols-5 gap-6">
+    <div className="mt-6 grid grid-cols-1 gap-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
       {paginatedRecipes.map((recipe) => (
         <ResultCard key={recipe.id} recipe={recipe} />
       ))}
       {paginatedRecipes.length === 0 && (
-        <div className="col-span-5 text-center py-20 text-neutral-500">
+        <div className="col-span-5 py-20 text-center text-neutral-500">
           No recipes found for this filter.
         </div>
       )}

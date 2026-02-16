@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { useRecipeDetails } from "@/api/useRecipeDetails";
+import type { Recipe as RecipeType } from "@/types";
 import Ingredients from "./content/Ingredients";
 import Instructions from "./content/Instructions";
 import HealthInfo from "./meta-labels/HealthInfo";
@@ -9,7 +10,6 @@ import RecipeHeader from "./RecipeHeader";
 import Banner from "./sidebar/Banner";
 import NutritionalInfo from "./sidebar/NutritionalInfo";
 import SimilarRecipes from "./sidebar/SimilarRecipes";
-import type { Recipe as RecipeType } from "@/types";
 
 interface RecipeProps {
   allRecipes: RecipeType[];
@@ -42,14 +42,13 @@ const Recipe: React.FC<RecipeProps> = ({ allRecipes }) => {
         />
       </div>
       <div className="grid grid-cols-12">
-        <div className="col-span-7 flex flex-col gap-10">
+        <div className="col-span-6 flex flex-col gap-10">
           <Ingredients ingredients={recipe.extendedIngredients || []} />
           <Instructions instructions={recipe.analyzedInstructions || []} />
         </div>
-        <div className="col-span-4 col-start-9 flex flex-col gap-14">
+        <div className="col-span-4 col-start-9 flex flex-col gap-10">
           <NutritionalInfo nutrition={recipe.nutrition} />
           <SimilarRecipes recipes={randomRecipes} />
-          <Banner />
         </div>
       </div>
     </div>

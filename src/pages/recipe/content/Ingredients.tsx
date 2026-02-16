@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Circle, CheckCircle2 } from "lucide-react";
+import { Circle, CircleCheckBig } from "lucide-react";
 
 interface IngredientsProps {
   ingredients: any[];
@@ -20,7 +20,7 @@ const Ingredients: React.FC<IngredientsProps> = ({ ingredients }) => {
 
   return (
     <div className="border-b border-neutral-100 pb-10">
-      <h2 className="mb-4 text-3xl">Ingredients</h2>
+      <h2 className="mb-6 text-3xl">Ingredients</h2>
       <ul className="flex flex-col gap-4">
         {ingredients?.map((ingredient) => {
           const isChecked = checkedIds.has(ingredient.id);
@@ -31,13 +31,13 @@ const Ingredients: React.FC<IngredientsProps> = ({ ingredients }) => {
               onClick={() => toggleIngredient(ingredient.id)}
             >
               {isChecked ? (
-                <CheckCircle2 className="h-6 w-6 text-green-500" />
+                <CircleCheckBig className="h-6 w-6 text-green-500" />
               ) : (
-                <Circle className="h-6 w-6 text-neutral-400" />
+                <Circle className="h-6 w-6 text-neutral-900" />
               )}
               <span
                 className={`transition-all ${
-                  isChecked ? "text-neutral-400 line-through" : ""
+                  isChecked ? "text-neutral-500 line-through" : ""
                 }`}
               >
                 <span className="font-bold">

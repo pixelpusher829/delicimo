@@ -50,7 +50,7 @@ const ResultsBar: React.FC<ResultsBarProps> = ({
   };
 
   return (
-    <div className="grid grid-cols-3 items-center">
+    <div className="flex justify-between flex-col md:flex-row gap-4 lg:grid grid-cols-3 items-center">
       <span className="text-2xl font-semibold">
         {recipes?.length || 0} Recipes
         {searchTerm && ` for "${searchTerm}"`}
@@ -98,7 +98,7 @@ const ResultsBar: React.FC<ResultsBarProps> = ({
         )}
       </div>
       <div className="flex items-center justify-end gap-2">
-        <span>Filter Results</span>
+        <span className="hidden lg:block">Filter Results</span>
         <Select value={selectedCuisine} onValueChange={setSelectedCuisine}>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Cuisine" />

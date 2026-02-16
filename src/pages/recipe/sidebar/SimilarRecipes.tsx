@@ -29,7 +29,9 @@ const SimilarRecipes: React.FC<SimilarRecipesProps> = ({ recipes }) => {
                 <StarIcon className="h-5 w-5 fill-current text-yellow-500" />
                 <StarIcon className="h-5 w-5 fill-current text-yellow-500" />
               </div>
-              <span className="text-xl font-semibold">{recipe.title}</span>
+              <span className="block truncate overflow-hidden text-xl font-semibold whitespace-nowrap">
+                {recipe.title}
+              </span>
             </div>
           </Link>
         ))}
