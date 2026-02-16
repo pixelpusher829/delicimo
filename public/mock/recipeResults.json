@@ -1,0 +1,473 @@
+{
+  "recipes": [
+    {
+      "id": 1001,
+      "title": "Creamy Garlic Pasta",
+      "image": "https://picsum.photos/seed/pasta1/600/400",
+      "summary": "A rich and comforting pasta dish with garlic and cream.",
+      "readyInMinutes": 25,
+      "servings": 2,
+      "cuisines": ["Italian"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 1, "name": "pasta", "amount": 200, "unit": "g" },
+        { "id": 2, "name": "garlic", "amount": 3, "unit": "cloves" },
+        { "id": 3, "name": "heavy cream", "amount": 0.5, "unit": "cup" },
+        { "id": 4, "name": "parmesan cheese", "amount": 0.25, "unit": "cup" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Cook pasta in boiling salted water." },
+            { "number": 2, "step": "Sauté minced garlic in butter until fragrant." },
+            { "number": 3, "step": "Add cream and simmer, then toss with pasta and cheese." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 550, "fat": 30, "carbs": 55, "protein": 15 },
+      "healthScore": 40,
+      "similarRecipes": [
+        { "id": 1011, "title": "Margherita Pizza", "image": "https://picsum.photos/seed/pizza1/400/300" },
+        { "id": 1012, "title": "Tomato Basil Penne", "image": "https://picsum.photos/seed/penne1/400/300" }
+      ]
+    },
+    {
+      "id": 1002,
+      "title": "Spicy Chicken Tacos",
+      "image": "https://picsum.photos/seed/tacos1/600/400",
+      "summary": "Quick and flavorful tacos with a spicy kick.",
+      "readyInMinutes": 20,
+      "servings": 3,
+      "cuisines": ["Mexican"],
+      "dishTypes": ["main course", "lunch"],
+      "extendedIngredients": [
+        { "id": 10, "name": "chicken breast", "amount": 300, "unit": "g" },
+        { "id": 11, "name": "taco shells", "amount": 6, "unit": "" },
+        { "id": 12, "name": "chili powder", "amount": 1, "unit": "tsp" },
+        { "id": 13, "name": "salsa", "amount": 0.5, "unit": "cup" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Season chicken with chili powder and cook until done." },
+            { "number": 2, "step": "Shred chicken and fill taco shells." },
+            { "number": 3, "step": "Top with salsa and other desired toppings." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 420, "fat": 18, "carbs": 35, "protein": 28 },
+      "healthScore": 55,
+      "similarRecipes": [
+        { "id": 1009, "title": "Greek Chicken Gyros", "image": "https://picsum.photos/seed/gyros1/400/300" },
+        { "id": 1013, "title": "Butter Chicken", "image": "https://picsum.photos/seed/butterchicken1/400/300" }
+      ]
+    },
+    {
+      "id": 1003,
+      "title": "Vegetable Stir Fry",
+      "image": "https://picsum.photos/seed/stirfry1/600/400",
+      "summary": "A fast and healthy stir fry packed with fresh vegetables.",
+      "readyInMinutes": 15,
+      "servings": 2,
+      "cuisines": ["Chinese"],
+      "dishTypes": ["main course", "side dish"],
+      "extendedIngredients": [
+        { "id": 20, "name": "broccoli", "amount": 1, "unit": "head" },
+        { "id": 21, "name": "bell peppers", "amount": 2, "unit": "" },
+        { "id": 22, "name": "soy sauce", "amount": 2, "unit": "tbsp" },
+        { "id": 23, "name": "ginger", "amount": 1, "unit": "tsp" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Chop all vegetables into bite-sized pieces." },
+            { "number": 2, "step": "Stir fry in a hot wok with ginger and soy sauce." },
+            { "number": 3, "step": "Serve hot over rice or noodles." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 250, "fat": 8, "carbs": 35, "protein": 10 },
+      "healthScore": 85,
+      "similarRecipes": [
+        { "id": 1006, "title": "Thai Green Curry", "image": "https://picsum.photos/seed/curry1/400/300" },
+        { "id": 1014, "title": "Sushi Bowl", "image": "https://picsum.photos/seed/sushi1/400/300" }
+      ]
+    },
+    {
+      "id": 1004,
+      "title": "Mediterranean Quinoa Bowl",
+      "image": "https://picsum.photos/seed/quinoa1/600/400",
+      "summary": "A refreshing bowl with quinoa, veggies, and herbs.",
+      "readyInMinutes": 30,
+      "servings": 2,
+      "cuisines": ["Mediterranean"],
+      "dishTypes": ["lunch", "main course"],
+      "extendedIngredients": [
+        { "id": 30, "name": "quinoa", "amount": 1, "unit": "cup" },
+        { "id": 31, "name": "cucumber", "amount": 0.5, "unit": "cup" },
+        { "id": 32, "name": "feta cheese", "amount": 50, "unit": "g" },
+        { "id": 33, "name": "olives", "amount": 0.25, "unit": "cup" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Cook quinoa according to package instructions." },
+            { "number": 2, "step": "Toss cooked quinoa with chopped vegetables and olives." },
+            { "number": 3, "step": "Top with crumbled feta and a lemon dressing." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 380, "fat": 15, "carbs": 50, "protein": 12 },
+      "healthScore": 80,
+      "similarRecipes": [
+        { "id": 1009, "title": "Greek Chicken Gyros", "image": "https://picsum.photos/seed/gyros1/400/300" },
+        { "id": 1007, "title": "French Onion Soup", "image": "https://picsum.photos/seed/onion1/400/300" }
+      ]
+    },
+    {
+      "id": 1005,
+      "title": "Lemon Butter Salmon",
+      "image": "https://picsum.photos/seed/salmon1/600/400",
+      "summary": "Tender salmon baked with lemon and butter.",
+      "readyInMinutes": 18,
+      "servings": 2,
+      "cuisines": ["American"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 40, "name": "salmon fillets", "amount": 2, "unit": "" },
+        { "id": 41, "name": "lemon", "amount": 1, "unit": "" },
+        { "id": 42, "name": "butter", "amount": 2, "unit": "tbsp" },
+        { "id": 43, "name": "parsley", "amount": 1, "unit": "tbsp" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Place salmon on a baking sheet." },
+            { "number": 2, "step": "Top with butter slices and lemon juice." },
+            { "number": 3, "step": "Bake at 400°F for 12-15 minutes until flaky." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 450, "fat": 28, "carbs": 2, "protein": 42 },
+      "healthScore": 75,
+      "similarRecipes": [
+        { "id": 1010, "title": "Spanish Paella", "image": "https://picsum.photos/seed/paella1/400/300" },
+        { "id": 1001, "title": "Creamy Garlic Pasta", "image": "https://picsum.photos/seed/pasta1/400/300" }
+      ]
+    },
+    {
+      "id": 1006,
+      "title": "Thai Green Curry",
+      "image": "https://picsum.photos/seed/curry1/600/400",
+      "summary": "A fragrant Thai curry made with coconut milk, green curry paste, and fresh herbs.",
+      "readyInMinutes": 35,
+      "servings": 4,
+      "cuisines": ["Thai"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 50, "name": "chicken thighs", "amount": 400, "unit": "g" },
+        { "id": 51, "name": "green curry paste", "amount": 2, "unit": "tbsp" },
+        { "id": 52, "name": "coconut milk", "amount": 1, "unit": "can" },
+        { "id": 53, "name": "basil", "amount": 0.5, "unit": "cup" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Sauté curry paste until fragrant." },
+            { "number": 2, "step": "Add chicken and cook until browned." },
+            { "number": 3, "step": "Pour in coconut milk and simmer 20 minutes." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 480, "fat": 32, "carbs": 12, "protein": 28 },
+      "healthScore": 60,
+      "similarRecipes": [
+        { "id": 1003, "title": "Vegetable Stir Fry", "image": "https://picsum.photos/seed/stirfry1/400/300" },
+        { "id": 1015, "title": "Beef Ramen", "image": "https://picsum.photos/seed/ramen1/400/300" }
+      ]
+    },
+
+    {
+      "id": 1007,
+      "title": "Classic French Onion Soup",
+      "image": "https://picsum.photos/seed/onion1/600/400",
+      "summary": "A deep, savory soup topped with toasted bread and melted cheese.",
+      "readyInMinutes": 50,
+      "servings": 4,
+      "cuisines": ["French"],
+      "dishTypes": ["soup"],
+      "extendedIngredients": [
+        { "id": 60, "name": "onions", "amount": 4, "unit": "large" },
+        { "id": 61, "name": "beef broth", "amount": 4, "unit": "cups" },
+        { "id": 62, "name": "baguette", "amount": 4, "unit": "slices" },
+        { "id": 63, "name": "gruyere cheese", "amount": 0.5, "unit": "cup" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Caramelize onions until deep golden brown." },
+            { "number": 2, "step": "Add broth and simmer 20 minutes." },
+            { "number": 3, "step": "Top with bread and cheese, broil until melted." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 390, "fat": 14, "carbs": 48, "protein": 12 },
+      "healthScore": 45,
+      "similarRecipes": [
+        { "id": 1010, "title": "Spanish Paella", "image": "https://picsum.photos/seed/paella1/400/300" },
+        { "id": 1004, "title": "Mediterranean Quinoa Bowl", "image": "https://picsum.photos/seed/quinoa1/400/300" }
+      ]
+    },
+
+    {
+      "id": 1008,
+      "title": "Korean Beef Bulgogi",
+      "image": "https://picsum.photos/seed/bulgogi1/600/400",
+      "summary": "Sweet and savory marinated beef cooked quickly over high heat.",
+      "readyInMinutes": 25,
+      "servings": 3,
+      "cuisines": ["Korean"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 70, "name": "beef slices", "amount": 300, "unit": "g" },
+        { "id": 71, "name": "soy sauce", "amount": 3, "unit": "tbsp" },
+        { "id": 72, "name": "brown sugar", "amount": 1, "unit": "tbsp" },
+        { "id": 73, "name": "sesame oil", "amount": 1, "unit": "tsp" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Marinate beef for at least 15 minutes." },
+            { "number": 2, "step": "Cook beef in a hot pan until caramelized." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 510, "fat": 22, "carbs": 30, "protein": 40 },
+      "healthScore": 52,
+      "similarRecipes": [
+        { "id": 1006, "title": "Thai Green Curry", "image": "https://picsum.photos/seed/curry1/400/300" },
+        { "id": 1015, "title": "Beef Ramen", "image": "https://picsum.photos/seed/ramen1/400/300" }
+      ]
+    },
+
+    {
+      "id": 1009,
+      "title": "Greek Chicken Gyros",
+      "image": "https://picsum.photos/seed/gyros1/600/400",
+      "summary": "Juicy marinated chicken wrapped in warm pita with tzatziki.",
+      "readyInMinutes": 30,
+      "servings": 2,
+      "cuisines": ["Greek"],
+      "dishTypes": ["main course", "street food"],
+      "extendedIngredients": [
+        { "id": 80, "name": "chicken thighs", "amount": 300, "unit": "g" },
+        { "id": 81, "name": "pita bread", "amount": 2, "unit": "pieces" },
+        { "id": 82, "name": "tzatziki", "amount": 0.5, "unit": "cup" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Marinate chicken in herbs and yogurt." },
+            { "number": 2, "step": "Grill chicken until cooked through." },
+            { "number": 3, "step": "Assemble gyros with pita and toppings." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 420, "fat": 14, "carbs": 38, "protein": 32 },
+      "healthScore": 68,
+      "similarRecipes": [
+        { "id": 1004, "title": "Mediterranean Quinoa Bowl", "image": "https://picsum.photos/seed/quinoa1/400/300" },
+        { "id": 1002, "title": "Spicy Chicken Tacos", "image": "https://picsum.photos/seed/tacos1/400/300" }
+      ]
+    },
+
+    {
+      "id": 1010,
+      "title": "Spanish Paella",
+      "image": "https://picsum.photos/seed/paella1/600/400",
+      "summary": "A vibrant rice dish with saffron, vegetables, and seafood.",
+      "readyInMinutes": 45,
+      "servings": 4,
+      "cuisines": ["Spanish"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 90, "name": "rice", "amount": 1.5, "unit": "cups" },
+        { "id": 91, "name": "shrimp", "amount": 200, "unit": "g" },
+        { "id": 92, "name": "peas", "amount": 0.5, "unit": "cup" },
+        { "id": 93, "name": "saffron", "amount": 1, "unit": "pinch" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Sauté vegetables and rice." },
+            { "number": 2, "step": "Add broth and saffron, simmer 20 minutes." },
+            { "number": 3, "step": "Add seafood and cook until done." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 520, "fat": 10, "carbs": 78, "protein": 22 },
+      "healthScore": 58,
+      "similarRecipes": [
+        { "id": 1007, "title": "French Onion Soup", "image": "https://picsum.photos/seed/onion1/400/300" },
+        { "id": 1011, "title": "Margherita Pizza", "image": "https://picsum.photos/seed/pizza1/400/300" }
+      ]
+    },
+
+    {
+      "id": 1011,
+      "title": "Margherita Pizza",
+      "image": "https://picsum.photos/seed/pizza1/600/400",
+      "summary": "A classic pizza topped with tomato, basil, and fresh mozzarella.",
+      "readyInMinutes": 22,
+      "servings": 2,
+      "cuisines": ["Italian"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 100, "name": "pizza dough", "amount": 1, "unit": "ball" },
+        { "id": 101, "name": "tomato sauce", "amount": 0.5, "unit": "cup" },
+        { "id": 102, "name": "mozzarella", "amount": 1, "unit": "cup" },
+        { "id": 103, "name": "basil", "amount": 0.25, "unit": "cup" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Spread sauce on dough." },
+            { "number": 2, "step": "Top with cheese and basil." },
+            { "number": 3, "step": "Bake at 475°F for 12 minutes." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 610, "fat": 20, "carbs": 78, "protein": 22 },
+      "healthScore": 48,
+      "similarRecipes": [
+        { "id": 1001, "title": "Creamy Garlic Pasta", "image": "https://picsum.photos/seed/pasta1/400/300" },
+        { "id": 1012, "title": "Tomato Basil Penne", "image": "https://picsum.photos/seed/penne1/400/300" }
+      ]
+    },
+
+    {
+      "id": 1012,
+      "title": "Tomato Basil Penne",
+      "image": "https://picsum.photos/seed/penne1/600/400",
+      "summary": "A simple and fresh pasta dish with basil and tomatoes.",
+      "readyInMinutes": 20,
+      "servings": 2,
+      "cuisines": ["Italian"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 110, "name": "penne pasta", "amount": 200, "unit": "g" },
+        { "id": 111, "name": "tomatoes", "amount": 1, "unit": "cup" },
+        { "id": 112, "name": "basil", "amount": 0.25, "unit": "cup" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Boil pasta until al dente." },
+            { "number": 2, "step": "Sauté tomatoes in olive oil." },
+            { "number": 3, "step": "Toss pasta with tomatoes and basil." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 480, "fat": 8, "carbs": 82, "protein": 14 },
+      "healthScore": 65,
+      "similarRecipes": [
+        { "id": 1001, "title": "Creamy Garlic Pasta", "image": "https://picsum.photos/seed/pasta1/400/300" },
+        { "id": 1011, "title": "Margherita Pizza", "image": "https://picsum.photos/seed/pizza1/400/300" }
+      ]
+    },
+
+    {
+      "id": 1013,
+      "title": "Butter Chicken",
+      "image": "https://picsum.photos/seed/butterchicken1/600/400",
+      "summary": "Creamy and rich butter chicken simmered in a spiced tomato sauce.",
+      "readyInMinutes": 40,
+      "servings": 4,
+      "cuisines": ["Indian"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 120, "name": "chicken breast", "amount": 400, "unit": "g" },
+        { "id": 121, "name": "tomato puree", "amount": 1, "unit": "cup" },
+        { "id": 122, "name": "cream", "amount": 0.5, "unit": "cup" },
+        { "id": 123, "name": "garam masala", "amount": 1, "unit": "tbsp" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Cook chicken until lightly browned." },
+            { "number": 2, "step": "Add tomato puree and spices." },
+            { "number": 3, "step": "Stir in cream and simmer 15 minutes." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 540, "fat": 28, "carbs": 18, "protein": 48 },
+      "healthScore": 50,
+      "similarRecipes": [
+        { "id": 1002, "title": "Spicy Chicken Tacos", "image": "https://picsum.photos/seed/tacos1/400/300" },
+        { "id": 1014, "title": "Sushi Bowl", "image": "https://picsum.photos/seed/sushi1/400/300" }
+      ]
+    },
+
+    {
+      "id": 1014,
+      "title": "Sushi Bowl",
+      "image": "https://picsum.photos/seed/sushi1/600/400",
+      "summary": "A deconstructed sushi experience with rice, veggies, and fresh toppings.",
+      "readyInMinutes": 25,
+      "servings": 2,
+      "cuisines": ["Japanese"],
+      "dishTypes": ["main course"],
+      "extendedIngredients": [
+        { "id": 130, "name": "rice", "amount": 1, "unit": "cup" },
+        { "id": 131, "name": "cucumber", "amount": 0.5, "unit": "cup" },
+        { "id": 132, "name": "avocado", "amount": 1, "unit": "whole" },
+        { "id": 133, "name": "soy sauce", "amount": 1, "unit": "tbsp" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Cook rice and let cool slightly." },
+            { "number": 2, "step": "Chop vegetables and arrange over rice." },
+            { "number": 3, "step": "Drizzle with soy sauce." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 390, "fat": 12, "carbs": 60, "protein": 8 },
+      "healthScore": 72,
+      "similarRecipes": [
+        { "id": 1003, "title": "Vegetable Stir Fry", "image": "https://picsum.photos/seed/stirfry1/400/300" },
+        { "id": 1015, "title": "Beef Ramen", "image": "https://picsum.photos/seed/ramen1/400/300" }
+      ]
+    },
+    {
+      "id": 1015,
+      "title": "Beef Ramen",
+      "image": "https://picsum.photos/seed/ramen1/600/400",
+      "summary": "Savory broth with noodles, beef, and vegetables.",
+      "readyInMinutes": 35,
+      "servings": 2,
+      "cuisines": ["Japanese"],
+      "dishTypes": ["main course", "soup"],
+      "extendedIngredients": [
+        { "id": 140, "name": "ramen noodles", "amount": 2, "unit": "packs" },
+        { "id": 141, "name": "beef slices", "amount": 200, "unit": "g" },
+        { "id": 142, "name": "beef broth", "amount": 4, "unit": "cups" },
+        { "id": 143, "name": "bok choy", "amount": 1, "unit": "bunch" }
+      ],
+      "analyzedInstructions": [
+        {
+          "steps": [
+            { "number": 1, "step": "Bring beef broth to a simmer." },
+            { "number": 2, "step": "Cook noodles and beef in the broth." },
+            { "number": 3, "step": "Add bok choy and serve hot." }
+          ]
+        }
+      ],
+      "nutrition": { "calories": 520, "fat": 18, "carbs": 65, "protein": 35 },
+      "healthScore": 55,
+      "similarRecipes": [
+        { "id": 1006, "title": "Thai Green Curry", "image": "https://picsum.photos/seed/curry1/400/300" },
+        { "id": 1008, "title": "Korean Beef Bulgogi", "image": "https://picsum.photos/seed/bulgogi1/400/300" }
+      ]
+    }
+  ]}

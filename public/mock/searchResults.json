@@ -1,0 +1,140 @@
+{
+  "results": [
+    {
+      "id": 1001,
+      "title": "Creamy Garlic Pasta",
+      "image": "https://picsum.photos/seed/pasta1/400/300",
+      "readyInMinutes": 25,
+      "cuisines": ["Italian"],
+      "summary": "A rich and comforting pasta dish with garlic and cream.",
+      "servings": 2
+    },
+    {
+      "id": 1002,
+      "title": "Spicy Chicken Tacos",
+      "image": "https://picsum.photos/seed/tacos1/400/300",
+      "readyInMinutes": 20,
+      "cuisines": ["Mexican"],
+      "summary": "Quick and flavorful tacos with a spicy kick.",
+      "servings": 3
+    },
+    {
+      "id": 1003,
+      "title": "Vegetable Stir Fry",
+      "image": "https://picsum.photos/seed/stirfry1/400/300",
+      "readyInMinutes": 15,
+      "cuisines": ["Chinese"],
+      "summary": "A fast and healthy stir fry packed with fresh vegetables.",
+      "servings": 2
+    },
+    {
+      "id": 1004,
+      "title": "Mediterranean Quinoa Bowl",
+      "image": "https://picsum.photos/seed/quinoa1/400/300",
+      "readyInMinutes": 30,
+      "cuisines": ["Mediterranean"],
+      "summary": "A refreshing bowl with quinoa, veggies, and herbs.",
+      "servings": 2
+    },
+    {
+      "id": 1005,
+      "title": "Lemon Butter Salmon",
+      "image": "https://picsum.photos/seed/salmon1/400/300",
+      "readyInMinutes": 18,
+      "cuisines": ["American"],
+      "summary": "Tender salmon baked with lemon and butter.",
+      "servings": 2
+    },
+    {
+      "id": 1006,
+      "title": "Thai Green Curry",
+      "image": "https://picsum.photos/seed/curry1/400/300",
+      "readyInMinutes": 35,
+      "cuisines": ["Thai"],
+      "summary": "A fragrant curry with coconut milk and fresh herbs.",
+      "servings": 4
+    },
+    {
+      "id": 1007,
+      "title": "Classic French Onion Soup",
+      "image": "https://picsum.photos/seed/onion1/400/300",
+      "readyInMinutes": 50,
+      "cuisines": ["French"],
+      "summary": "A deep, savory soup topped with melted cheese.",
+      "servings": 4
+    },
+    {
+      "id": 1008,
+      "title": "Korean Beef Bulgogi",
+      "image": "https://picsum.photos/seed/bulgogi1/400/300",
+      "readyInMinutes": 25,
+      "cuisines": ["Korean"],
+      "summary": "Sweet and savory marinated beef cooked to perfection.",
+      "servings": 3
+    },
+    {
+      "id": 1009,
+      "title": "Greek Chicken Gyros",
+      "image": "https://picsum.photos/seed/gyros1/400/300",
+      "readyInMinutes": 30,
+      "cuisines": ["Greek"],
+      "summary": "Juicy chicken wrapped in warm pita with tzatziki.",
+      "servings": 2
+    },
+    {
+      "id": 1010,
+      "title": "Spanish Paella",
+      "image": "https://picsum.photos/seed/paella1/400/300",
+      "readyInMinutes": 45,
+      "cuisines": ["Spanish"],
+      "summary": "A vibrant rice dish with saffron and seafood.",
+      "servings": 4
+    },
+
+    {
+      "id": 1011,
+      "title": "Margherita Pizza",
+      "image": "https://picsum.photos/seed/pizza1/400/300",
+      "readyInMinutes": 22,
+      "cuisines": ["Italian"],
+      "summary": "A classic pizza with tomato, basil, and mozzarella.",
+      "servings": 2
+    },
+    {
+      "id": 1012,
+      "title": "Tomato Basil Penne",
+      "image": "https://picsum.photos/seed/penne1/400/300",
+      "readyInMinutes": 20,
+      "cuisines": ["Italian"],
+      "summary": "A simple and fresh pasta with basil and tomatoes.",
+      "servings": 2
+    },
+    {
+      "id": 1013,
+      "title": "Butter Chicken",
+      "image": "https://picsum.photos/seed/butterchicken1/400/300",
+      "readyInMinutes": 40,
+      "cuisines": ["Indian"],
+      "summary": "Creamy and rich butter chicken with warm spices.",
+      "servings": 4
+    },
+    {
+      "id": 1014,
+      "title": "Sushi Bowl",
+      "image": "https://picsum.photos/seed/sushi1/400/300",
+      "readyInMinutes": 25,
+      "cuisines": ["Japanese"],
+      "summary": "A deconstructed sushi experience in a bowl.",
+      "servings": 2
+    },
+    {
+      "id": 1015,
+      "title": "Beef Ramen",
+      "image": "https://picsum.photos/seed/ramen1/400/300",
+      "readyInMinutes": 35,
+      "cuisines": ["Japanese"],
+      "summary": "Savory broth with noodles, beef, and vegetables.",
+      "servings": 2
+    }
+  ]
+}
