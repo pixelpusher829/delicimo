@@ -96,7 +96,7 @@ const ResultsBar: React.FC<ResultsBarProps> = ({
       <div className="flex items-center justify-end gap-2">
         <span className="hidden lg:block">Filter Results</span>
         <Select value={selectedCuisine} onValueChange={setSelectedCuisine}>
-          <SelectTrigger className="w-[180px]">
+          <SelectTrigger className="w-45">
             <SelectValue placeholder="Cuisine" />
           </SelectTrigger>
           <SelectContent>

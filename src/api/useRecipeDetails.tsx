@@ -13,7 +13,7 @@ export function useRecipeDetails(id: number, isMock: boolean) {
       const fetchMock = async () => {
         const response = await fetch("/mock/recipeDetails.json");
         const data = await response.json();
-        const match = data.recipes.find((r: any) => r.id === id);
+        const match = data.recipes.find((r: Recipe) => r.id === id);
         setRecipe(match);
       };
 

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Circle, CircleCheckBig } from "lucide-react";
+import type { Ingredient } from "@/types";
 
 interface IngredientsProps {
-  ingredients: any[];
+  ingredients: Ingredient[];
 }
 
 const Ingredients: React.FC<IngredientsProps> = ({ ingredients }) => {

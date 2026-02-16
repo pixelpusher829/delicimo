@@ -1,8 +1,9 @@
+import type { Recipe } from "@/types";
 import { Link } from "react-router";
 import StarIcon from "~icons/fa7-solid/star";
 
 interface SimilarRecipesProps {
-  recipes: any[];
+  recipes: Recipe[];
 }
 
 const SimilarRecipes: React.FC<SimilarRecipesProps> = ({ recipes }) => {
