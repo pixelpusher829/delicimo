@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "id": 716627,
+      "image": "https://img.spoonacular.com/recipes/716627-312x231.jpg",
+      "imageType": "jpg",
+      "title": "Easy Homemade Rice and Beans",
+      "readyInMinutes": 35,
+      "servings": 2,
+      "sourceUrl": "http://cooking2perfection.blogspot.com/2012/11/easy-homemade-rice-and-beans.html",
+      "vegetarian": true,
+      "vegan": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "veryHealthy": true,
+      "cheap": false,
+      "veryPopular": true,
+      "sustainable": false,
+      "lowFodmap": false,
+      "weightWatcherSmartPoints": 10,
+      "gaps": "no",
+      "preparationMinutes": null,
+      "cookingMinutes": null,
+      "aggregateLikes": 471,
+      "healthScore": 60.0,
+      "creditsText": "blogspot.com",
+      "license": null,
+      "sourceName": "blogspot.com",
+      "pricePerServing": 106.02,
+      "summary": "Easy Homemade Rice and Beans is a main course that serves 2. One serving contains <b>446 calories</b>, <b>19g of protein</b>, and <b>4g of fat</b>. For <b>$1.06 per serving</b>, this recipe <b>covers 26%</b> of your daily requirements of vitamins and minerals. A mixture of optional: of hot sauce, canned tomatoes, water, and a handful of other ingredients are all it takes to make this recipe so yummy. This recipe from cooking2perfection.blogspot.com has 471 fans. It is a good option if you're following a <b>gluten free, dairy free, lacto ovo vegetarian, and vegan</b> diet. From preparation to the plate, this recipe takes around <b>35 minutes</b>. Overall, this recipe earns a <b>tremendous spoonacular score of 98%</b>. <a href=\"https://spoonacular.com/recipes/easy-homemade-rice-and-beans-1311839\">Easy Homemade Rice and Beans</a>, <a href=\"https://spoonacular.com/recipes/easy-homemade-rice-and-beans-1303021\">Easy Homemade Rice and Beans</a>, and <a href=\"https://spoonacular.com/recipes/easy-homemade-rice-and-beans-1230117\">Easy Homemade Rice and Beans</a> are very similar to this recipe.",
+      "cuisines": [],
+      "dishTypes": ["side dish", "lunch", "main course", "main dish", "dinner"],
+      "diets": ["gluten free", "dairy free", "lacto ovo vegetarian", "vegan"],
+      "occasions": [],
+      "language": "en",
+      "spoonacularScore": 98.6318130493164,
+      "spoonacularSourceUrl": "https://spoonacular.com/easy-homemade-rice-and-beans-716627"
+    }
+  ],
+  "offset": 0,
+  "number": 1,
+  "totalResults": 292
+}

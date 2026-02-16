@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router";
 import type { Recipe as RecipeType } from "@/types";
 import Hero from "./Hero";
@@ -15,6 +15,10 @@ const Home: React.FC<HomeProps> = ({ recipes, loading }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCuisine, setSelectedCuisine] = useState<string>("all");
 
+  useEffect(() => {
+    setSearchTerm(searchParams.get("q") || "");
+  }, [searchParams]);
+
   const handleCuisineChange = (cuisine: string) => {
     setSelectedCuisine(cuisine);
     setCurrentPage(1);
@@ -30,7 +34,6 @@ const Home: React.FC<HomeProps> = ({ recipes, loading }) => {
       <Results
         recipes={recipes}
         loading={loading}
-        searchTerm={searchTerm}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         selectedCuisine={selectedCuisine}

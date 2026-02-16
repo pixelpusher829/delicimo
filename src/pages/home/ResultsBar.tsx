@@ -1,7 +1,7 @@
+import { useSearchParams } from "react-router";
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
@@ -19,7 +19,7 @@ import type { Recipe } from "@/types";
 
 interface ResultsBarProps {
   recipes: Recipe[];
-  searchTerm: string;
+  allCuisines: string[];
   currentPage: number;
   setCurrentPage: (page: number) => void;
   selectedCuisine: string;
@@ -30,18 +30,15 @@ const ITEMS_PER_PAGE = 5;
 
 const ResultsBar: React.FC<ResultsBarProps> = ({
   recipes,
-  searchTerm,
+  allCuisines,
   currentPage,
   setCurrentPage,
   selectedCuisine,
   setSelectedCuisine,
 }) => {
+  const [searchParams] = useSearchParams();
+  const searchLabel = searchParams.get("q");
   const totalPages = Math.ceil(recipes.length / ITEMS_PER_PAGE);
-
-  // Get unique cuisines for the filter
-  const cuisines = Array.from(
-    new Set(recipes.flatMap((r) => r.cuisines || []))
-  ).sort();
 
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
@@ -53,11 +50,10 @@ const ResultsBar: React.FC<ResultsBarProps> = ({
     <div className="flex justify-between flex-col md:flex-row gap-4 lg:grid grid-cols-3 items-center">
       <span className="text-2xl font-semibold">
         {recipes?.length || 0} Recipes
-        {searchTerm && ` for "${searchTerm}"`}
+        {searchLabel && ` for "${searchLabel}"`}
       </span>
       <div>
-        {totalPages > 1 && (
-          <Pagination>
+                  <Pagination>
             <PaginationContent>
               <PaginationItem>
                 <PaginationPrevious
@@ -95,7 +91,7 @@ const ResultsBar: React.FC<ResultsBarProps> = ({
               </PaginationItem>
             </PaginationContent>
           </Pagination>
-        )}
+        
       </div>
       <div className="flex items-center justify-end gap-2">
         <span className="hidden lg:block">Filter Results</span>
@@ -106,7 +102,7 @@ const ResultsBar: React.FC<ResultsBarProps> = ({
           <SelectContent>
             <SelectGroup>
               <SelectItem value="all">All Cuisines</SelectItem>
-              {cuisines.map((cuisine) => (
+              {allCuisines.map((cuisine) => (
                 <SelectItem key={cuisine} value={cuisine}>
                   {cuisine}
                 </SelectItem>

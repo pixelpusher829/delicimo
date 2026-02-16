@@ -1,10 +1,12 @@
 import type { Nutrition } from "@/types";
 
 interface NutritionalInfoProps {
-  nutrition: Nutrition;
+  nutrition?: Nutrition;
 }
 
 const NutritionalInfo: React.FC<NutritionalInfoProps> = ({ nutrition }) => {
+  if (!nutrition) return null;
+
   return (
     <div className="rounded-xl bg-neutral-50 p-6">
       <h2 className="mb-6 text-3xl">Nutritional Info</h2>

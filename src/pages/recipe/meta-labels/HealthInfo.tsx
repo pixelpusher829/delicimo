@@ -1,12 +1,9 @@
 import {
-  BicepsFlexed,
   Leaf,
   MilkOff,
   Salad,
   Zap,
   Wheat,
-  CheckCircle2,
-  XCircle,
   Heart,
 } from "lucide-react";
 import type { Recipe } from "@/types";

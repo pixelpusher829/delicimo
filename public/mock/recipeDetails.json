@@ -12,7 +12,7 @@
       "vegetarian": true,
       "ketogenic": false,
       "glutenFree": false,
-      "cuisines": ["Italian"],
+      "cuisines": ["Mediterranean"],
       "extendedIngredients": [
         { "id": 1, "name": "fettuccine pasta", "amount": 200, "unit": "g" },
         { "id": 2, "name": "garlic", "amount": 4, "unit": "cloves" },
@@ -115,7 +115,7 @@
       "vegetarian": true,
       "ketogenic": false,
       "glutenFree": true,
-      "cuisines": ["Chinese"],
+      "cuisines": ["Asian"],
       "extendedIngredients": [
         { "id": 20, "name": "broccoli florets", "amount": 2, "unit": "cups" },
         { "id": 21, "name": "bell peppers", "amount": 2, "unit": "" },
@@ -201,7 +201,7 @@
           { "name": "Carbohydrates", "amount": 50.89, "unit": "g", "percentOfDailyNeeds": 16.96 },
           { "name": "Net Carbohydrates", "amount": 42.12, "unit": "g", "percentOfDailyNeeds": 15.32 },
           { "name": "Sugar", "amount": 5.45, "unit": "g", "percentOfDailyNeeds": 6.06 },
-          { "name": "Cholesterol", "amount": 0, "unit": "mg", "percentOfDailyNeeds": 0 },
+          { "name": "Cholesterol", "amount": 0, "unit": "mg", "percentOfDailyNeeds": 31.83 },
           { "name": "Sodium", "amount": 320.12, "unit": "mg", "percentOfDailyNeeds": 13.92 },
           { "name": "Protein", "amount": 12.45, "unit": "g", "percentOfDailyNeeds": 24.9 }
         ]
@@ -268,7 +268,7 @@
       "vegetarian": false,
       "ketogenic": false,
       "glutenFree": true,
-      "cuisines": ["Thai"],
+      "cuisines": ["Asian"],
       "extendedIngredients": [
         { "id": 50, "name": "green curry paste", "amount": 3, "unit": "tbsp" },
         { "id": 51, "name": "coconut milk", "amount": 1, "unit": "can" },
@@ -319,7 +319,7 @@
       "vegetarian": true,
       "ketogenic": false,
       "glutenFree": false,
-      "cuisines": ["French"],
+      "cuisines": ["Mediterranean"],
       "extendedIngredients": [
         { "id": 60, "name": "yellow onions", "amount": 5, "unit": "large" },
         { "id": 61, "name": "beef broth", "amount": 6, "unit": "cups" },
@@ -370,7 +370,7 @@
       "vegetarian": false,
       "ketogenic": false,
       "glutenFree": false,
-      "cuisines": ["Korean"],
+      "cuisines": ["Asian"],
       "extendedIngredients": [
         { "id": 70, "name": "flank steak", "amount": 500, "unit": "g" },
         { "id": 71, "name": "soy sauce", "amount": 0.25, "unit": "cup" },
@@ -421,7 +421,7 @@
       "vegetarian": false,
       "ketogenic": false,
       "glutenFree": false,
-      "cuisines": ["Greek"],
+      "cuisines": ["Mediterranean"],
       "extendedIngredients": [
         { "id": 80, "name": "chicken breast", "amount": 400, "unit": "g" },
         { "id": 81, "name": "pita bread", "amount": 2, "unit": "rounds" },
@@ -472,7 +472,7 @@
       "vegetarian": false,
       "ketogenic": false,
       "glutenFree": true,
-      "cuisines": ["Spanish"],
+      "cuisines": ["Mediterranean"],
       "extendedIngredients": [
         { "id": 90, "name": "arborio rice", "amount": 2, "unit": "cups" },
         { "id": 91, "name": "chicken broth", "amount": 4, "unit": "cups" },
@@ -523,7 +523,7 @@
       "vegetarian": true,
       "ketogenic": false,
       "glutenFree": false,
-      "cuisines": ["Italian"],
+      "cuisines": ["Mediterranean"],
       "extendedIngredients": [
         { "id": 100, "name": "pizza dough", "amount": 1, "unit": "ball" },
         { "id": 101, "name": "san marzano tomatoes", "amount": 1, "unit": "can" },
@@ -572,7 +572,7 @@
       "vegetarian": true,
       "ketogenic": false,
       "glutenFree": false,
-      "cuisines": ["Italian"],
+      "cuisines": ["Mediterranean"],
       "extendedIngredients": [
         { "id": 110, "name": "penne pasta", "amount": 200, "unit": "g" },
         { "id": 111, "name": "cherry tomatoes", "amount": 2, "unit": "cups" },
@@ -672,7 +672,7 @@
       "vegetarian": false,
       "ketogenic": false,
       "glutenFree": true,
-      "cuisines": ["Japanese"],
+      "cuisines": ["Asian"],
       "extendedIngredients": [
         { "id": 130, "name": "sushi rice", "amount": 1.5, "unit": "cups" },
         { "id": 131, "name": "fresh salmon", "amount": 200, "unit": "g" },
@@ -722,7 +722,7 @@
       "vegetarian": false,
       "ketogenic": false,
       "glutenFree": false,
-      "cuisines": ["Japanese"],
+      "cuisines": ["Asian"],
       "extendedIngredients": [
         { "id": 140, "name": "ramen noodles", "amount": 2, "unit": "packs" },
         { "id": 141, "name": "beef broth", "amount": 4, "unit": "cups" },

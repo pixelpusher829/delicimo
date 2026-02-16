@@ -7,17 +7,17 @@ import Instructions from "./content/Instructions";
 import HealthInfo from "./meta-labels/HealthInfo";
 import RecipeMeta from "./meta-labels/RecipeMeta";
 import RecipeHeader from "./RecipeHeader";
-import Banner from "./sidebar/Banner";
 import NutritionalInfo from "./sidebar/NutritionalInfo";
 import SimilarRecipes from "./sidebar/SimilarRecipes";
 
 interface RecipeProps {
   allRecipes: RecipeType[];
+  isMock: boolean;
 }
 
-const Recipe: React.FC<RecipeProps> = ({ allRecipes }) => {
+const Recipe: React.FC<RecipeProps> = ({ allRecipes, isMock }) => {
   const { id } = useParams();
-  const { recipe, loading } = useRecipeDetails(Number(id));
+  const { recipe, loading } = useRecipeDetails(Number(id), isMock);
   const [randomRecipes, setRandomRecipes] = useState<RecipeType[]>([]);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Recipe: React.FC<RecipeProps> = ({ allRecipes }) => {
   if (!recipe) return <div className="p-20 text-center">Recipe not found.</div>;
 
   return (
-    <div className="m-auto max-w-360 p-6 pt-17">
+    <div className="m-auto max-w-360 p-6 py-17">
       <RecipeHeader recipe={recipe} />
       <div className="my-8 grid grid-cols-3 border-b border-neutral-100 pb-10">
         <HealthInfo recipe={recipe} />

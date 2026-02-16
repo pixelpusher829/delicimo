@@ -1,19 +1,59 @@
+const key = import.meta.env.VITE_API_SECRET_KEY;
+
+//This variable is a manual override to prevent API calls during development. Set to true to enable API calls, false to use mock data.
+//The Spoonacular API has a very limited free tier with a daily quota, so this allows development without worrying about hitting that limit.
+const apiActive = false;
+
 import { useEffect, useState } from "react";
 
-export function useSearchRecipes(searchTerm: string) {
+export function useSearchRecipes(
+  searchTerm: string,
+  setIsMock: (isMock: boolean) => void,
+) {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const load = async () => {
-      const response = await fetch("/mock/searchResults.json");
-      const data = await response.json();
-      setRecipes(data.results);
+      setLoading(true);
+      const fetchMock = async () => {
+        const response = await fetch("/mock/searchResults.json");
+        const data = await response.json();
+        setRecipes(data.results);
+        setIsMock(true);
+      };
+
+      // If API is active and search term is provided, fetch from API. Otherwise, fetch mock data.
+      if (apiActive && searchTerm) {
+        try {
+          const options = {
+            method: "GET",
+            headers: {
+              "x-api-key": key,
+            },
+          };
+          const response = await fetch(
+            `https://api.spoonacular.com/recipes/complexSearch?query=${searchTerm}&number=15&addRecipeInformation=true`,
+            options,
+          );
+          if (!response.ok) throw new Error("API Error");
+          const data = await response.json();
+          setRecipes(data.results);
+          setIsMock(false);
+
+        // If API call fails due to error or depleted quota, fallback to mock data
+        } catch (err) {
+          console.error(err);
+          await fetchMock();
+        }
+      } else {
+        await fetchMock();
+      }
       setLoading(false);
     };
 
     load();
-  }, []);
+  }, [searchTerm, setIsMock]);
 
   return { recipes, loading };
 }

@@ -2,42 +2,18 @@ export interface Recipe {
   id: number;
   title: string;
   image: string;
-  imageType?: string;
   servings: number;
   readyInMinutes: number;
-  preparationMinutes?: number;
-  cookingMinutes?: number;
-  license?: string;
-  sourceName?: string;
-  sourceUrl?: string;
-  spoonacularSourceUrl?: string;
   healthScore: number;
-  spoonacularScore?: number;
-  pricePerServing?: number;
-  cheap?: boolean;
-  creditsText?: string;
   cuisines: string[];
-  dairyFree?: boolean;
-  diets?: string[];
-  gaps?: string;
-  glutenFree?: boolean;
-  instructions?: string;
-  ketogenic?: boolean;
-  lowFodmap?: boolean;
-  occasions?: string[];
-  sustainable?: boolean;
-  vegan?: boolean;
-  vegetarian?: boolean;
-  veryHealthy?: boolean;
-  veryPopular?: boolean;
-  whole30?: boolean;
-  weightWatcherSmartPoints?: number;
-  dishTypes: string[];
+  vegetarian: boolean;
+  vegan: boolean;
+  glutenFree: boolean;
+  dairyFree: boolean;
+  ketogenic: boolean;
   extendedIngredients?: Ingredient[];
-  summary: string;
   analyzedInstructions?: Instruction[];
   nutrition?: Nutrition;
-  similarRecipes?: SimilarRecipe[];
 }
 
 export interface Ingredient {
@@ -65,11 +41,4 @@ export interface Nutrient {
   name: string;
   amount: number;
   unit: string;
-  percentOfDailyNeeds: number;
-}
-
-export interface SimilarRecipe {
-  id: number;
-  title: string;
-  image: string;
 }

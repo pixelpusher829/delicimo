@@ -5,7 +5,6 @@ import ResultsContent from "./ResultsContent";
 interface ResultsProps {
   recipes: Recipe[];
   loading: boolean;
-  searchTerm: string;
   currentPage: number;
   setCurrentPage: (page: number) => void;
   selectedCuisine: string;
@@ -15,12 +14,15 @@ interface ResultsProps {
 const Results: React.FC<ResultsProps> = ({
   recipes,
   loading,
-  searchTerm,
   currentPage,
   setCurrentPage,
   selectedCuisine,
   setSelectedCuisine,
 }) => {
+  const allCuisines = Array.from(
+    new Set(recipes.flatMap((r) => r.cuisines || []))
+  ).sort();
+
   const filteredRecipes = recipes.filter((recipe) => {
     if (selectedCuisine === "all") return true;
     return recipe.cuisines?.includes(selectedCuisine);
@@ -31,7 +33,7 @@ const Results: React.FC<ResultsProps> = ({
       <div className="m-auto max-w-360">
         <ResultsBar
           recipes={filteredRecipes}
-          searchTerm={searchTerm}
+          allCuisines={allCuisines}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
           selectedCuisine={selectedCuisine}
