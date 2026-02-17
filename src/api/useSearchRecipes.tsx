@@ -2,7 +2,7 @@ const key = import.meta.env.VITE_API_SECRET_KEY;
 
 //This variable is a manual override to prevent API calls during development. Set to true to enable API calls, false to use mock data.
 //The Spoonacular API has a very limited free tier with a daily quota, so this allows development without worrying about hitting that limit.
-const apiActive = false;
+const apiActive = true;
 
 import { useEffect, useState } from "react";
 
