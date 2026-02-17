@@ -4,6 +4,9 @@ const key = import.meta.env.VITE_API_SECRET_KEY;
 //The Spoonacular API has a very limited free tier with a daily quota, so this allows development without worrying about hitting that limit.
 const apiActive = true;
 
+// Number of results to fetch per search. Adjust as needed, but keep in mind the API's rate limits and response times.
+const resultsPerSearch = 15;
+
 import { useEffect, useState } from "react";
 
 export function useSearchRecipes(
@@ -33,7 +36,7 @@ export function useSearchRecipes(
             },
           };
           const response = await fetch(
-            `https://api.spoonacular.com/recipes/complexSearch?query=${searchTerm}&number=15&addRecipeInformation=true`,
+            `https://api.spoonacular.com/recipes/complexSearch?query=${searchTerm}&number=${resultsPerSearch}&addRecipeInformation=true`,
             options,
           );
           if (!response.ok) throw new Error("API Error");

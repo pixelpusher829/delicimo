@@ -7,18 +7,18 @@ import Results from "./Results";
 interface HomeProps {
   recipes: RecipeType[];
   loading: boolean;
+  activeSearchTerm: string;
 }
 
-const Home: React.FC<HomeProps> = ({ recipes, loading }) => {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get("q") || "";
-  const [searchTerm, setSearchTerm] = useState(query);
+const Home: React.FC<HomeProps> = ({ recipes, loading, activeSearchTerm }) => {
+  const [, setSearchParams] = useSearchParams();
+  const [searchTerm, setSearchTerm] = useState(activeSearchTerm);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCuisine, setSelectedCuisine] = useState<string>("all");
 
   useEffect(() => {
-    setSearchTerm(query);
-  }, [query]);
+    setSearchTerm(activeSearchTerm);
+  }, [activeSearchTerm]);
 
   const handleCuisineChange = (cuisine: string) => {
     setSelectedCuisine(cuisine);

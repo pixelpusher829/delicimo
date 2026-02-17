@@ -6,14 +6,24 @@ import { Home, Recipe } from "@/pages";
 
 function App() {
   const [searchParams] = useSearchParams();
-  const searchTerm = searchParams.get("q") || "";
+  const query = searchParams.get("q");
+  const [activeSearchTerm, setActiveSearchTerm] = useState(query || "");
+  const [prevQuery, setPrevQuery] = useState(query);
+
+  if (query !== prevQuery) {
+    setPrevQuery(query);
+    if (query !== null) {
+      setActiveSearchTerm(query);
+    }
+  }
+
   const [isMock, setIsMock] = useState(false);
-  const { recipes, loading } = useSearchRecipes(searchTerm, setIsMock);
+  const { recipes, loading } = useSearchRecipes(activeSearchTerm, setIsMock);
 
   return (
     <Routes>
       <Route path="/" element={<Root />}>
-        <Route index element={<Home recipes={recipes} loading={loading} />} />
+        <Route index element={<Home recipes={recipes} loading={loading} activeSearchTerm={activeSearchTerm} />} />
         <Route
           path="/recipe/:id"
           element={<Recipe allRecipes={recipes} isMock={isMock} />}
