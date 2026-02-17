@@ -3,11 +3,11 @@ import { useRecipeDetails } from "@/api/useRecipeDetails";
 import type { Recipe as RecipeType } from "@/types";
 import Ingredients from "./content/Ingredients";
 import Instructions from "./content/Instructions";
-import HealthInfo from "./meta-labels/HealthInfo";
 import RecipeMeta from "./meta-labels/RecipeMeta";
 import RecipeHeader from "./RecipeHeader";
 import NutritionalInfo from "./sidebar/NutritionalInfo";
 import SimilarRecipes from "./sidebar/SimilarRecipes";
+import DietaryInfo from "./meta-labels/DietaryInfo";
 
 interface RecipeProps {
   allRecipes: RecipeType[];
@@ -32,19 +32,16 @@ const Recipe: React.FC<RecipeProps> = ({ allRecipes, isMock }) => {
   return (
     <div className="m-auto max-w-360 p-6 py-17">
       <RecipeHeader recipe={recipe} />
-      <div className="my-8 grid grid-cols-3 border-b border-neutral-100 pb-10">
-        <HealthInfo recipe={recipe} />
-        <RecipeMeta
-          readyInMinutes={recipe.readyInMinutes}
-          servings={recipe.servings}
-        />
+      <div className="my-8 flex flex-col justify-between gap-10 border-b border-neutral-100 pb-10 lg:flex-row">
+        <RecipeMeta recipe={recipe} />
+        <DietaryInfo recipe={recipe} />
       </div>
-      <div className="grid grid-cols-12">
-        <div className="col-span-6 flex flex-col gap-10">
+      <div className="grid grid-cols-1 gap-14 lg:grid-cols-3 xl:grid-cols-12">
+        <div className="col-span-1 flex max-w-160 flex-col gap-10 lg:col-span-2 xl:col-span-6">
           <Ingredients ingredients={recipe.extendedIngredients || []} />
           <Instructions instructions={recipe.analyzedInstructions || []} />
         </div>
-        <div className="col-span-4 col-start-9 flex flex-col gap-10">
+        <div className="col-span-1 flex max-w-160 flex-col gap-10 lg:col-span-1 xl:col-span-4 xl:col-start-9">
           <NutritionalInfo nutrition={recipe.nutrition} />
           <SimilarRecipes recipes={randomRecipes} />
         </div>

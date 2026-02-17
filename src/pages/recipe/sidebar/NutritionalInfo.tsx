@@ -20,8 +20,8 @@ const NutritionalInfo: React.FC<NutritionalInfoProps> = ({ nutrition }) => {
                 : ""
             }`}
           >
-            <span className="text-xl">{nutrient.name}</span>
-            <span className="text-xl font-semibold">
+            <span className="text-lg md:text-xl">{nutrient.name}</span>
+            <span className="text-lg font-semibold md:text-xl">
               {Math.round(nutrient.amount)} {nutrient.unit}
             </span>
           </div>
