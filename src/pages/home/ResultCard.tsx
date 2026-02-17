@@ -26,11 +26,11 @@ const ResultCard: React.FC<ResultCardProps> = ({ recipe }) => {
             <StarIcon className="h-5 w-5 fill-current text-yellow-500" />
           </div>
           <span className="block truncate font-semibold">{recipe.title}</span>
-          <div className="flex justify-between pt-3">
+          <div className="flex justify-between gap-2 pt-3">
             <span className="truncate text-neutral-600">
               {recipe.cuisines?.[0] || "General"}
             </span>
-            <span className="text-neutral-600">
+            <span className="text-neutral-600 shrink-0">
               {recipe.readyInMinutes} Mins
             </span>
           </div>

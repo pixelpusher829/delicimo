@@ -5,7 +5,7 @@ const key = import.meta.env.VITE_API_SECRET_KEY;
 const apiActive = true;
 
 // Number of results to fetch per search. Adjust as needed, but keep in mind the API's rate limits and response times.
-const resultsPerSearch = 15;
+const resultsPerSearch = 25;
 
 import { useEffect, useState } from "react";
 
@@ -23,7 +23,6 @@ export function useSearchRecipes(
         const response = await fetch("/mock/searchResults.json");
         const data = await response.json();
         setRecipes(data.results);
-        setIsMock(true);
       };
 
       // If API is active and search term is provided, fetch from API. Otherwise, fetch mock data.
@@ -48,9 +47,13 @@ export function useSearchRecipes(
         } catch (err) {
           console.error(err);
           await fetchMock();
+          setIsMock(true);
         }
       } else {
         await fetchMock();
+        if (searchTerm) {
+          setIsMock(true);
+        }
       }
       setLoading(false);
     };

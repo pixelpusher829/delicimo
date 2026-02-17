@@ -6,8 +6,7 @@ const Footer = () => {
       <div className="flex justify-between gap-3 px-6 flex-row">
         <span>© {year} Delicimo</span>
         <span className="hidden text-center text-sm text-neutral-500 md:block">
-          Hey Medavie! We’d work well together. A tasteful nudge from your
-          future teammate. 😉
+          Hey Medavie! We’d work well together. Just saying. 😉
         </span>
         <span>Powered by Spoonacular API</span>
       </div>
