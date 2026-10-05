@@ -1,49 +1,34 @@
-import {
-  Leaf,
-  MilkOff,
-  Salad,
-  Zap,
-  Wheat,
-} from "lucide-react";
+import { Check, Leaf, MilkOff, Salad, Sparkles, WheatOff } from "lucide-react";
 import type { Recipe } from "@/types";
 
-interface DietaryInfoProps {
-  recipe: Recipe;
-}
-
-const DietaryInfo: React.FC<DietaryInfoProps> = ({ recipe }) => {
-  const dietaryFlags = [
+const DietaryInfo: React.FC<{ recipe: Recipe }> = ({ recipe }) => {
+  const isKeto = recipe.diets?.some((d) => d.includes("ketogenic"));
+  const flags = [
     { label: "Vegetarian", value: recipe.vegetarian, icon: Salad },
     { label: "Vegan", value: recipe.vegan, icon: Leaf },
-    { label: "Dairy Free", value: recipe.dairyFree, icon: MilkOff },
-    { label: "Ketogenic", value: recipe.ketogenic, icon: Zap },
-    { label: "Gluten Free", value: recipe.glutenFree, icon: Wheat },
-  ];
+    { label: "Gluten free", value: recipe.glutenFree, icon: WheatOff },
+    { label: "Dairy free", value: recipe.dairyFree, icon: MilkOff },
+    { label: "Ketogenic", value: isKeto, icon: Check },
+    { label: "Very healthy", value: recipe.veryHealthy, icon: Sparkles },
+  ].filter((f) => f.value);
+
+  if (flags.length === 0) return null;
 
   return (
-      <div className="flex gap-16">
-        <div className="pr-10">
-          <h2 className="mb-3 text-2xl font-semibold">Dietary Information</h2>
-          <div className="flex flex-wrap gap-x-8 gap-y-3">
-            {dietaryFlags.map((flag) => (
-              <div key={flag.label} className="flex items-center gap-2">
-                <flag.icon
-                  className={`h-5 w-5 ${
-                    flag.value ? "text-neutral-700" : "text-neutral-300"
-                  }`}
-                />
-                <span
-                  className={`text-lg ${
-                    flag.value ? "text-neutral-700" : "text-neutral-300"
-                  }`}
-                >
-                  {flag.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+    <div>
+      <h2 className="sr-only">Dietary information</h2>
+      <ul className="flex flex-wrap gap-2">
+        {flags.map(({ label, icon: Icon }) => (
+          <li
+            key={label}
+            className="flex items-center gap-1.5 rounded-full bg-leaf/10 px-3 py-1.5 text-sm font-semibold text-leaf"
+          >
+            <Icon aria-hidden className="size-4" />
+            {label}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

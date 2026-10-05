@@ -1,50 +1,71 @@
 import type { Nutrition } from "@/types";
 
-interface NutritionalInfoProps {
-  nutrition?: Nutrition;
-}
+const ORDER = [
+  "Calories",
+  "Fat",
+  "Saturated Fat",
+  "Carbohydrates",
+  "Net Carbohydrates",
+  "Sugar",
+  "Fiber",
+  "Protein",
+  "Cholesterol",
+  "Sodium",
+];
 
-const NutritionalInfo: React.FC<NutritionalInfoProps> = ({ nutrition }) => {
-  if (!nutrition) return null;
-
-  const allowedNutrients = [
-    "Calories",
-    "Fat",
-    "Saturated Fat",
-    "Carbohydrates",
-    "Net Carbohydrates",
-    "Sugar",
-    "Cholesterol",
-    "Sodium",
-    "Protein",
-  ];
-
-  const filteredNutrients =
-    nutrition.nutrients?.filter((nutrient) =>
-      allowedNutrients.includes(nutrient.name),
-    ) || [];
+const NutritionalInfo: React.FC<{ nutrition?: Nutrition }> = ({
+  nutrition,
+}) => {
+  const nutrients = ORDER.flatMap(
+    (name) => nutrition?.nutrients.find((n) => n.name === name) ?? [],
+  );
+  if (nutrients.length === 0) return null;
 
   return (
-    <div className="rounded-xl bg-neutral-50 p-6">
-      <h2 className="mb-6 text-3xl">Nutritional Info</h2>
-      <div className="flex flex-col gap-2">
-        {filteredNutrients.map((nutrient, index) => (
-          <div
-            key={nutrient.name}
-            className={`flex justify-between pb-3 ${
-              index !== filteredNutrients.length - 1
-                ? "border-b-2 border-b-neutral-100"
-                : ""
-            }`}
-          >
-            <span className="text-lg md:text-xl">{nutrient.name}</span>
-            <span className="text-lg font-semibold md:text-xl">
-              {Math.round(nutrient.amount)} {nutrient.unit}
-            </span>
-          </div>
-        ))}
-      </div>
-    </div>
+    <section
+      aria-labelledby="nutrition-heading"
+      className="rounded-2xl bg-neutral-50 p-6 ring-1 ring-neutral-100"
+    >
+      <h2 id="nutrition-heading" className="text-3xl">
+        Nutrition
+      </h2>
+      <p className="mt-1 mb-5 text-sm text-neutral-500">
+        Per serving · % of daily value
+      </p>
+      <dl className="flex flex-col gap-4">
+        {nutrients.map((n) => {
+          const pct = n.percentOfDailyNeeds;
+          return (
+            <div key={n.name}>
+              <div className="flex justify-between gap-4">
+                <dt className="text-lg">{n.name}</dt>
+                <dd className="text-lg font-semibold tabular-nums">
+                  {Math.round(n.amount).toLocaleString()} {n.unit}
+                  {pct != null && (
+                    <span className="ml-2 inline-block w-12 text-right text-sm font-normal text-neutral-500">
+                      {Math.round(pct)}%
+                    </span>
+                  )}
+                </dd>
+              </div>
+              {pct != null && (
+                <div
+                  className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-neutral-200"
+                  aria-hidden
+                >
+                  <div
+                    className={
+                      pct > 100 ? "h-full bg-amber-500" : "h-full bg-leaf"
+                    }
+                    style={{ width: `${Math.min(100, pct)}%` }}
+                  />
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </dl>
+    </section>
   );
 };
 

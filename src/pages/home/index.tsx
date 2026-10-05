@@ -1,45 +1,19 @@
-import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router";
-import type { Recipe as RecipeType } from "@/types";
+import Discover from "./Discover";
 import Hero from "./Hero";
-import Results from "./Results";
+import SearchResults from "./SearchResults";
 
-interface HomeProps {
-  recipes: RecipeType[];
-  loading: boolean;
-  activeSearchTerm: string;
-}
-
-const Home: React.FC<HomeProps> = ({ recipes, loading, activeSearchTerm }) => {
-  const [, setSearchParams] = useSearchParams();
-  const [searchTerm, setSearchTerm] = useState(activeSearchTerm);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [selectedCuisine, setSelectedCuisine] = useState<string>("all");
-
-  useEffect(() => {
-    setSearchTerm(activeSearchTerm);
-  }, [activeSearchTerm]);
-
-  const handleCuisineChange = (cuisine: string) => {
-    setSelectedCuisine(cuisine);
-    setCurrentPage(1);
-  };
+const Home = () => {
+  const [params] = useSearchParams();
+  const q = params.get("q")?.trim() ?? "";
 
   return (
     <>
-      <Hero
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        setSearchParams={setSearchParams}
-      />
-      <Results
-        recipes={recipes}
-        loading={loading}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        selectedCuisine={selectedCuisine}
-        setSelectedCuisine={handleCuisineChange}
-      />
+      <title>
+        {q ? `${q} recipes · Delicimo` : "Delicimo · Wholesome recipes"}
+      </title>
+      <Hero compact={Boolean(q)} />
+      {q ? <SearchResults key={q} query={q} /> : <Discover />}
     </>
   );
 };

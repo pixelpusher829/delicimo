@@ -1,44 +1,38 @@
-import { useState, useEffect } from "react";
-import { Route, Routes, useSearchParams } from "react-router";
-import { useSearchRecipes } from "@/api/useSearchRecipes";
+import { createBrowserRouter } from "react-router";
 import Root from "@/layout/Root";
-import { Home, Recipe } from "@/pages";
+import RouteError from "@/pages/RouteError";
+import Home from "@/pages/home";
 
-function App() {
-  const [searchParams] = useSearchParams();
-  const query = searchParams.get("q");
-  const [activeSearchTerm, setActiveSearchTerm] = useState(query || "");
-  const [prevQuery, setPrevQuery] = useState(query);
-
-  if (query !== prevQuery) {
-    setPrevQuery(query);
-    if (query !== null) {
-      setActiveSearchTerm(query);
-    }
-  }
-
-  const [isMock, setIsMock] = useState(() => {
-    const saved = sessionStorage.getItem("isMock");
-    return saved !== null ? JSON.parse(saved) : true;
-  });
-
-  useEffect(() => {
-    sessionStorage.setItem("isMock", JSON.stringify(isMock));
-  }, [isMock]);
-
-  const { recipes, loading } = useSearchRecipes(activeSearchTerm, setIsMock);
-
-  return (
-    <Routes>
-      <Route path="/" element={<Root />}>
-        <Route index element={<Home recipes={recipes} loading={loading} activeSearchTerm={activeSearchTerm} />} />
-        <Route
-          path="/recipe/:id"
-          element={<Recipe allRecipes={recipes} isMock={isMock} />}
-        />
-      </Route>
-    </Routes>
-  );
-}
-
-export default App;
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: Root,
+    errorElement: <RouteError />,
+    children: [
+      {
+        errorElement: <RouteError />,
+        children: [
+          { index: true, Component: Home },
+          {
+            path: "recipe/:id",
+            lazy: async () => ({
+              Component: (await import("@/pages/recipe")).default,
+            }),
+          },
+          {
+            path: "saved",
+            lazy: async () => ({
+              Component: (await import("@/pages/saved")).default,
+            }),
+          },
+          {
+            path: "*",
+            lazy: async () => ({
+              Component: (await import("@/pages/NotFound")).default,
+            }),
+          },
+        ],
+      },
+    ],
+  },
+]);
